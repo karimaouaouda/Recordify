@@ -15,6 +15,12 @@ TEST_BIN_DIR = bin/tests
 # Modules - add new modules here
 MODULES = core screen_handler audio_handler video_handler file_manager ui config utils
 
+#screenshot rule
+screenshot:
+	clean 
+	build
+	echo "every things is ready"
+
 # Program name
 TARGET = $(BIN_DIR)/recordify.exe
 TEST_TARGET = $(TEST_BIN_DIR)/test_runner.exe
