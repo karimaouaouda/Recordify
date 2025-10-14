@@ -212,3 +212,10 @@ check:
 
 # Phony targets
 .PHONY: all clean clean-test rebuild debug test test-run test-verbose test-debug install help run check directories build-module-% test-module-% info-module-%
+
+
+hani:
+	g++ hani_screen_shot\screen_shot_1.cpp -lgdi32 -mwindows -o bin\app.exe
+
+runhani:
+	bin\app.exe
