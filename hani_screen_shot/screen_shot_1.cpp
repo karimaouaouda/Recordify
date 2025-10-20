@@ -26,6 +26,12 @@ int main()
 int CaptureAnImage()
 {
 
+    cout << "get screen metrics";
+     // 1️⃣ Get screen dimensions
+    int screenWidth  = 1920;//GetSystemMetrics(SM_CXSCREEN);
+    int screenHeight = 1080;//GetSystemMetrics(SM_CYSCREEN);
+
+    cout << "Screen Width: " << screenWidth << ", Screen Height: " << screenHeight << endl;
     HDC hdcScreen;
     HDC hdcWindow;
     HDC hdcMemDC = NULL;
@@ -97,8 +103,8 @@ int CaptureAnImage()
     }
 
     // Create a compatible bitmap from the Window DC.
-    int screenWidth = GetSystemMetrics(SM_CXSCREEN);
-    int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+    /* int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+    int screenHeight = GetSystemMetrics(SM_CYSCREEN); */
     hbmScreen = CreateCompatibleBitmap(hdcScreen, screenWidth, screenHeight);
     if (!hbmScreen)
     {
@@ -153,7 +159,8 @@ int CaptureAnImage()
     bi.biClrUsed = 0;
     bi.biClrImportant = 0;
 
-    dwBmpSize = ((bmpScreen.bmWidth * bi.biBitCount + 31) / 32) * 4 * bmpScreen.bmHeight;
+
+    dwBmpSize = ((screenWidth * bi.biBitCount + 31) / 32) * 4 * screenHeight;
 
     // Starting with 32-bit Windows, GlobalAlloc and LocalAlloc are implemented as wrapper functions that
     // call HeapAlloc using a handle to the process's default heap. Therefore, GlobalAlloc and LocalAlloc

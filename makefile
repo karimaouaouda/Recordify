@@ -215,7 +215,10 @@ check:
 
 
 hani:
-	g++ hani_screen_shot\screen_shot_1.cpp -lgdi32 -mwindows -o bin\app.exe
+	g++ hani_screen_shot\full_screen.cpp -lgdi32 -o bin\app.exe
+
+fusc:
+	g++ hani_screen_shot\full_screen.cpp -lgdi32 -o bin\app.exe && bin\app.exe
 
 runhani:
 	bin\app.exe
