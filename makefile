@@ -217,8 +217,5 @@ check:
 hani:
 	g++ hani_screen_shot\full_screen.cpp -lgdi32 -o bin\app.exe
 
-fusc:
-	g++ hani_screen_shot\full_screen.cpp -lgdi32 -o bin\app.exe && bin\app.exe
-
 runhani:
 	bin\app.exe
