@@ -2,6 +2,8 @@
 #include <windows.h>
 #include <string>
 #include <iostream>
+#include <thread>
+#include <chrono>
 
 #ifndef WTYPES
 #define WTYPES
@@ -23,15 +25,30 @@ char *lpbitmap = NULL;
 HANDLE hDIB = NULL;
 DWORD dwBmpSize = 0;
 int CaptureAnImage();
-// std::string GetLastErrorAsString();
+void FullTask(int fileNumber);
 
 int main()
 {
-
-    CaptureAnImage();
+    cout << "start the function" << endl;
+    int fileNumber = 0;
+    while (true)
+    {
+        Sleep(5000);
+        FullTask(fileNumber);
+        fileNumber += 1;
+    }
+    cout << "end the function " << endl;
     return 0;
 }
 
+void FullTask(int fileNumber)
+{
+    std::thread imageCapture(CaptureAnImage);
+    imageCapture.join();
+    std::thread fileSave(saveFile, fileNumber);
+    fileSave.join();
+    cout << "function :" << fileNumber << "end excution" << endl;
+}
 int CaptureAnImage()
 {
 
@@ -61,7 +78,7 @@ int CaptureAnImage()
     return 0;
 }
 
-void saveFile()
+void saveFile(int FileNumber)
 {
 
     BITMAPFILEHEADER bmfHeader;
@@ -97,13 +114,14 @@ void saveFile()
     // OutputDebugStringW(L"start capture");
     // A file is created, this is where we will save the screen capture.
     // captureqwsx.bmp
-
-    hFile = CreateFileW(L"screenshot.bmp",
-                        GENERIC_WRITE,
-                        0,
-                        NULL,
-                        CREATE_ALWAYS,
-                        FILE_ATTRIBUTE_NORMAL, NULL);
+    char *extension = (const char[5]) ".bmp";
+    wstring fileName = L"screenshot" + to_wstring(FileNumber) + L"helo";
+    hFile = CreateFile(fileName.c_str(),
+                       GENERIC_WRITE,
+                       0,
+                       NULL,
+                       CREATE_ALWAYS,
+                       FILE_ATTRIBUTE_NORMAL, NULL);
 
     if (hFile == INVALID_HANDLE_VALUE)
     {
