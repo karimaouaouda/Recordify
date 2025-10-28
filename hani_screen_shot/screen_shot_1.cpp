@@ -14,71 +14,77 @@ char *error;
 HANDLE hFile = NULL;
 int width = 1920;
 int height = 1080;
-HDC hdcScreen;
-HDC hdcWindow;
-HDC hdcMemDC = NULL;
-HBITMAP hbmScreen = NULL;
-BITMAP bmpScreen;
+
 DWORD dwBytesWritten = 0;
 DWORD dwSizeofDIB = 0;
 char *lpbitmap = NULL;
 HANDLE hDIB = NULL;
 DWORD dwBmpSize = 0;
-int CaptureAnImage();
+struct CaptureResult
+{
+    BITMAP bmpScreen;
+    HBITMAP hbmScreen;
+    HDC hdcScreen;
+    HDC hdcMemDC;
+};
+CaptureResult CaptureAnImage();
 void FullTask(int fileNumber);
+void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber);
 
 int main()
 {
-    cout << "start the function" << endl;
     int fileNumber = 0;
-    while (true)
+    while (fileNumber <= 5)
     {
         Sleep(5000);
         FullTask(fileNumber);
         fileNumber += 1;
     }
-    cout << "end the function " << endl;
     return 0;
 }
 
 void FullTask(int fileNumber)
 {
-    std::thread imageCapture(CaptureAnImage);
+    // struct for each parameters of each screen shot
+    CaptureResult captureResult;
+    // make thread
+    std::thread imageCapture([&]()
+                             { captureResult = CaptureAnImage(); 
+                                saveFile( captureResult.bmpScreen, captureResult.hbmScreen, captureResult.hdcScreen, captureResult.hdcMemDC, fileNumber); });
+    // start thread
     imageCapture.join();
-    std::thread fileSave(saveFile, fileNumber);
-    fileSave.join();
-    cout << "function :" << fileNumber << "end excution" << endl;
 }
-int CaptureAnImage()
+CaptureResult CaptureAnImage()
 {
+    CaptureResult result;
 
     // get the handle windows of screen
-    hdcScreen = GetDC(NULL);
+    result.hdcScreen = GetDC(NULL);
 
     // Create a compatible DC, which is used in a BitBlt from the window DC.
-    hdcMemDC = CreateCompatibleDC(hdcScreen);
+    result.hdcMemDC = CreateCompatibleDC(result.hdcScreen);
 
     // Create a compatible bitmap from the Window DC.
-    hbmScreen = CreateCompatibleBitmap(hdcScreen, width, height);
+    result.hbmScreen = CreateCompatibleBitmap(result.hdcScreen, width, height);
 
     // Select the compatible bitmap into the compatible memory DC.
-    SelectObject(hdcMemDC, hbmScreen);
+    SelectObject(result.hdcMemDC, result.hbmScreen);
 
     // Bit block transfer into our compatible memory DC.
-    !BitBlt(hdcMemDC,
-            0, 0,
-            width, height,
-            hdcScreen,
-            GetSystemMetrics(SM_XVIRTUALSCREEN), GetSystemMetrics(SM_YVIRTUALSCREEN),
-            SRCCOPY | CAPTUREBLT);
+    BitBlt(result.hdcMemDC,
+           0, 0,
+           width, height,
+           result.hdcScreen,
+           GetSystemMetrics(SM_XVIRTUALSCREEN), GetSystemMetrics(SM_YVIRTUALSCREEN),
+           SRCCOPY | CAPTUREBLT);
 
     // Get the BITMAP from the HBITMAP.
-    GetObject(hbmScreen, sizeof(BITMAP), &bmpScreen);
+    GetObject(result.hbmScreen, sizeof(BITMAP), &result.bmpScreen);
 
-    return 0;
+    return result;
 }
 
-void saveFile(int FileNumber)
+void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber)
 {
 
     BITMAPFILEHEADER bmfHeader;
@@ -111,17 +117,15 @@ void saveFile(int FileNumber)
               lpbitmap,
               (BITMAPINFO *)&bi, DIB_RGB_COLORS);
 
-    // OutputDebugStringW(L"start capture");
     // A file is created, this is where we will save the screen capture.
-    // captureqwsx.bmp
-    char *extension = (const char[5]) ".bmp";
-    wstring fileName = L"screenshot" + to_wstring(FileNumber) + L"helo";
-    hFile = CreateFile(fileName.c_str(),
-                       GENERIC_WRITE,
-                       0,
-                       NULL,
-                       CREATE_ALWAYS,
-                       FILE_ATTRIBUTE_NORMAL, NULL);
+
+    wstring fileName = L"screenshot" + to_wstring(FileNumber) + L"helo" + L".bmp";
+    hFile = CreateFileW(fileName.c_str(),
+                        GENERIC_WRITE,
+                        0,
+                        NULL,
+                        CREATE_ALWAYS,
+                        FILE_ATTRIBUTE_NORMAL, NULL);
 
     if (hFile == INVALID_HANDLE_VALUE)
     {
