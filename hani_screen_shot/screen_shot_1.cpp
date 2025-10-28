@@ -58,14 +58,42 @@ CaptureResult CaptureAnImage()
 {
     CaptureResult result;
 
-    // get the handle windows of screen
-    result.hdcScreen = GetDC(NULL);
+    cout << "get screen metrics";
+     // 1️⃣ Get screen dimensions
+    int screenWidth  = 1920;//GetSystemMetrics(SM_CXSCREEN);
+    int screenHeight = 1080;//GetSystemMetrics(SM_CYSCREEN);
+
+    cout << "Screen Width: " << screenWidth << ", Screen Height: " << screenHeight << endl;
+    HDC hdcScreen;
+    HDC hdcWindow;
+    HDC hdcMemDC = NULL;
+    HBITMAP hbmScreen = NULL;
+    BITMAP bmpScreen;
+    DWORD dwBytesWritten = 0;
+    DWORD dwSizeofDIB = 0;
+    // HANDLE hFile = NULL;
+    char *lpbitmap = NULL;
+    HANDLE hDIB = NULL;
+    DWORD dwBmpSize = 0;
+
+    // Retrieve the handle to a display device context for the client
+    // area of the window.
+    hdcScreen = GetDC(NULL);
 
     // Create a compatible DC, which is used in a BitBlt from the window DC.
     result.hdcMemDC = CreateCompatibleDC(result.hdcScreen);
 
     // Create a compatible bitmap from the Window DC.
-    result.hbmScreen = CreateCompatibleBitmap(result.hdcScreen, width, height);
+    /* int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+    int screenHeight = GetSystemMetrics(SM_CYSCREEN); */
+    hbmScreen = CreateCompatibleBitmap(hdcScreen, screenWidth, screenHeight);
+    if (!hbmScreen)
+    {
+        cout << "CreateCompatibleBitmap Failed" << endl;
+        MessageBoxW(NULL, L"CreateCompatibleBitmap Failed", L"Failed", MB_OK);
+
+        return 0;
+    }
 
     // Select the compatible bitmap into the compatible memory DC.
     SelectObject(result.hdcMemDC, result.hbmScreen);
@@ -102,7 +130,8 @@ void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, 
     bi.biClrUsed = 0;
     bi.biClrImportant = 0;
 
-    dwBmpSize = ((bmpScreen.bmWidth * bi.biBitCount + 31) / 32) * 4 * bmpScreen.bmHeight;
+
+    dwBmpSize = ((screenWidth * bi.biBitCount + 31) / 32) * 4 * screenHeight;
 
     // Starting with 32-bit Windows, GlobalAlloc and LocalAlloc are implemented as wrapper functions that
     // call HeapAlloc using a handle to the process's default heap. Therefore, GlobalAlloc and LocalAlloc
