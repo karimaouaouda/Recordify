@@ -2,6 +2,8 @@
 #include <windows.h>
 #include <string>
 #include <iostream>
+#include <thread>
+#include <chrono>
 
 #ifndef WTYPES
 #define WTYPES
@@ -12,28 +14,49 @@ char *error;
 HANDLE hFile = NULL;
 int width = 1920;
 int height = 1080;
-HDC hdcScreen;
-HDC hdcWindow;
-HDC hdcMemDC = NULL;
-HBITMAP hbmScreen = NULL;
-BITMAP bmpScreen;
+
 DWORD dwBytesWritten = 0;
 DWORD dwSizeofDIB = 0;
 char *lpbitmap = NULL;
 HANDLE hDIB = NULL;
 DWORD dwBmpSize = 0;
-int CaptureAnImage();
-// std::string GetLastErrorAsString();
+struct CaptureResult
+{
+    BITMAP bmpScreen;
+    HBITMAP hbmScreen;
+    HDC hdcScreen;
+    HDC hdcMemDC;
+};
+CaptureResult CaptureAnImage();
+void FullTask(int fileNumber);
+void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber);
 
 int main()
 {
-
-    CaptureAnImage();
+    int fileNumber = 0;
+    while (fileNumber <= 5)
+    {
+        Sleep(5000);
+        FullTask(fileNumber);
+        fileNumber += 1;
+    }
     return 0;
 }
 
-int CaptureAnImage()
+void FullTask(int fileNumber)
 {
+    // struct for each parameters of each screen shot
+    CaptureResult captureResult;
+    // make thread
+    std::thread imageCapture([&]()
+                             { captureResult = CaptureAnImage(); 
+                                saveFile( captureResult.bmpScreen, captureResult.hbmScreen, captureResult.hdcScreen, captureResult.hdcMemDC, fileNumber); });
+    // start thread
+    imageCapture.join();
+}
+CaptureResult CaptureAnImage()
+{
+    CaptureResult result;
 
     cout << "get screen metrics";
      // 1️⃣ Get screen dimensions
@@ -58,7 +81,7 @@ int CaptureAnImage()
     hdcScreen = GetDC(NULL);
 
     // Create a compatible DC, which is used in a BitBlt from the window DC.
-    hdcMemDC = CreateCompatibleDC(hdcScreen);
+    result.hdcMemDC = CreateCompatibleDC(result.hdcScreen);
 
     // Create a compatible bitmap from the Window DC.
     /* int screenWidth = GetSystemMetrics(SM_CXSCREEN);
@@ -73,23 +96,23 @@ int CaptureAnImage()
     }
 
     // Select the compatible bitmap into the compatible memory DC.
-    SelectObject(hdcMemDC, hbmScreen);
+    SelectObject(result.hdcMemDC, result.hbmScreen);
 
     // Bit block transfer into our compatible memory DC.
-    !BitBlt(hdcMemDC,
-            0, 0,
-            width, height,
-            hdcScreen,
-            GetSystemMetrics(SM_XVIRTUALSCREEN), GetSystemMetrics(SM_YVIRTUALSCREEN),
-            SRCCOPY | CAPTUREBLT);
+    BitBlt(result.hdcMemDC,
+           0, 0,
+           width, height,
+           result.hdcScreen,
+           GetSystemMetrics(SM_XVIRTUALSCREEN), GetSystemMetrics(SM_YVIRTUALSCREEN),
+           SRCCOPY | CAPTUREBLT);
 
     // Get the BITMAP from the HBITMAP.
-    GetObject(hbmScreen, sizeof(BITMAP), &bmpScreen);
+    GetObject(result.hbmScreen, sizeof(BITMAP), &result.bmpScreen);
 
-    return 0;
+    return result;
 }
 
-void saveFile()
+void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber)
 {
 
     BITMAPFILEHEADER bmfHeader;
@@ -123,11 +146,10 @@ void saveFile()
               lpbitmap,
               (BITMAPINFO *)&bi, DIB_RGB_COLORS);
 
-    // OutputDebugStringW(L"start capture");
     // A file is created, this is where we will save the screen capture.
-    // captureqwsx.bmp
 
-    hFile = CreateFileW(L"screenshot.bmp",
+    wstring fileName = L"screenshot" + to_wstring(FileNumber) + L"helo" + L".bmp";
+    hFile = CreateFileW(fileName.c_str(),
                         GENERIC_WRITE,
                         0,
                         NULL,
