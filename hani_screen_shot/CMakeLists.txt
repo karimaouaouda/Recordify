@@ -1,8 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
-project(OpenCV_Test)
+project(video-generator)
 
 find_package(OpenCV REQUIRED)
+# Include OpenCV headers
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(OpenCV_Test main.cpp)
-target_link_libraries(OpenCV_Test ${OpenCV_LIBS})
+# include_directories(${OpenCV_INCLUDE_DIRS})
+
+add_executable(generator video-generator.cpp)
+target_link_libraries(generator ${OpenCV_LIBS})
+
+# message helper
+message(STATUS "OpenCV libraries: ${OpenCV_LIBS}")
