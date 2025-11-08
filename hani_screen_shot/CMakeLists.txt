@@ -7,8 +7,9 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 # include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(generator video-generator.cpp)
-target_link_libraries(generator ${OpenCV_LIBS})
+add_executable(video-generator video-generator.cpp)
+target_link_libraries(video-generator ${OpenCV_LIBS})
 
 # message helper
+message(STATUS "OpenCV include directories: ${OpenCV_INCLUDE_DIRS}")
 message(STATUS "OpenCV libraries: ${OpenCV_LIBS}")

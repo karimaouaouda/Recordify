@@ -10,7 +10,7 @@ int main()
     cv::Mat img = cv::Mat::zeros(300, 600, CV_8UC3);
 
     // Write some text on it
-    cv::putText(img, "Hello OpenCV!", cv::Point(100, 150),
+    cv::putText(img, "Hello OpenCV! , let's work now", cv::Point(100, 150),
                 cv::FONT_HERSHEY_SIMPLEX, 1.5, cv::Scalar(0, 255, 0), 3);
 
     // Display the image

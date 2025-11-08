@@ -11,11 +11,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/mingw64/share/cmake-4.1/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "C:/mingw64/share/cmake-4.1/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Program used to build from build.ninja files."
+    description: "Path to a program."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -25,9 +25,7 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ninja-build"
-      - "ninja"
-      - "samu"
+      - "mingw32-make.exe"
     candidate_directories:
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -78,309 +76,79 @@ events:
       - "C:/Users/USER/AppData/Roaming/Composer/vendor/bin/"
       - "C:/Users/USER/AppData/Local/ComposerSetup/bin/"
       - "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "c:/MinGW/bin/"
+      - "/MinGW/bin/"
+      - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja-build.com"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja-build.exe"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja-build"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja.com"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja.exe"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/ninja"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/samu.com"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/samu.exe"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/samu"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja-build.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja-build.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja-build"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/ninja"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/samu.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/samu.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/samu"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja-build"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/ninja"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/samu.com"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/samu.exe"
-      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/samu"
-      - "C:/Windows/System32/ninja-build.com"
-      - "C:/Windows/System32/ninja-build.exe"
-      - "C:/Windows/System32/ninja-build"
-      - "C:/Windows/System32/ninja.com"
-      - "C:/Windows/System32/ninja.exe"
-      - "C:/Windows/System32/ninja"
-      - "C:/Windows/System32/samu.com"
-      - "C:/Windows/System32/samu.exe"
-      - "C:/Windows/System32/samu"
-      - "C:/Windows/ninja-build.com"
-      - "C:/Windows/ninja-build.exe"
-      - "C:/Windows/ninja-build"
-      - "C:/Windows/ninja.com"
-      - "C:/Windows/ninja.exe"
-      - "C:/Windows/ninja"
-      - "C:/Windows/samu.com"
-      - "C:/Windows/samu.exe"
-      - "C:/Windows/samu"
-      - "C:/Windows/System32/wbem/ninja-build.com"
-      - "C:/Windows/System32/wbem/ninja-build.exe"
-      - "C:/Windows/System32/wbem/ninja-build"
-      - "C:/Windows/System32/wbem/ninja.com"
-      - "C:/Windows/System32/wbem/ninja.exe"
-      - "C:/Windows/System32/wbem/ninja"
-      - "C:/Windows/System32/wbem/samu.com"
-      - "C:/Windows/System32/wbem/samu.exe"
-      - "C:/Windows/System32/wbem/samu"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja-build.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja-build.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja-build"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/ninja"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/samu.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/samu.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/samu"
-      - "C:/Windows/System32/OpenSSH/ninja-build.com"
-      - "C:/Windows/System32/OpenSSH/ninja-build.exe"
-      - "C:/Windows/System32/OpenSSH/ninja-build"
-      - "C:/Windows/System32/OpenSSH/ninja.com"
-      - "C:/Windows/System32/OpenSSH/ninja.exe"
-      - "C:/Windows/System32/OpenSSH/ninja"
-      - "C:/Windows/System32/OpenSSH/samu.com"
-      - "C:/Windows/System32/OpenSSH/samu.exe"
-      - "C:/Windows/System32/OpenSSH/samu"
-      - "C:/Program Files/dotnet/ninja-build.com"
-      - "C:/Program Files/dotnet/ninja-build.exe"
-      - "C:/Program Files/dotnet/ninja-build"
-      - "C:/Program Files/dotnet/ninja.com"
-      - "C:/Program Files/dotnet/ninja.exe"
-      - "C:/Program Files/dotnet/ninja"
-      - "C:/Program Files/dotnet/samu.com"
-      - "C:/Program Files/dotnet/samu.exe"
-      - "C:/Program Files/dotnet/samu"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja-build.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja-build.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja-build"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/ninja"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/samu.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/samu.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/samu"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja-build.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja-build.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja-build"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/ninja"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/samu.com"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/samu.exe"
-      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/samu"
-      - "C:/xampp/php/ninja-build.com"
-      - "C:/xampp/php/ninja-build.exe"
-      - "C:/xampp/php/ninja-build"
-      - "C:/xampp/php/ninja.com"
-      - "C:/xampp/php/ninja.exe"
-      - "C:/xampp/php/ninja"
-      - "C:/xampp/php/samu.com"
-      - "C:/xampp/php/samu.exe"
-      - "C:/xampp/php/samu"
-      - "C:/Program Files/Java/jdk-21/bin/ninja-build.com"
-      - "C:/Program Files/Java/jdk-21/bin/ninja-build.exe"
-      - "C:/Program Files/Java/jdk-21/bin/ninja-build"
-      - "C:/Program Files/Java/jdk-21/bin/ninja.com"
-      - "C:/Program Files/Java/jdk-21/bin/ninja.exe"
-      - "C:/Program Files/Java/jdk-21/bin/ninja"
-      - "C:/Program Files/Java/jdk-21/bin/samu.com"
-      - "C:/Program Files/Java/jdk-21/bin/samu.exe"
-      - "C:/Program Files/Java/jdk-21/bin/samu"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja-build.com"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja-build.exe"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja-build"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja.com"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja.exe"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/ninja"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/samu.com"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/samu.exe"
-      - "C:/Users/USER/.android/studio/gradle-8.7/bin/samu"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja-build.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja-build.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja-build"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ninja"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/samu.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/samu.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/samu"
-      - "C:/Program Files/php-8.3.12/ninja-build.com"
-      - "C:/Program Files/php-8.3.12/ninja-build.exe"
-      - "C:/Program Files/php-8.3.12/ninja-build"
-      - "C:/Program Files/php-8.3.12/ninja.com"
-      - "C:/Program Files/php-8.3.12/ninja.exe"
-      - "C:/Program Files/php-8.3.12/ninja"
-      - "C:/Program Files/php-8.3.12/samu.com"
-      - "C:/Program Files/php-8.3.12/samu.exe"
-      - "C:/Program Files/php-8.3.12/samu"
-      - "C:/ProgramData/ComposerSetup/bin/ninja-build.com"
-      - "C:/ProgramData/ComposerSetup/bin/ninja-build.exe"
-      - "C:/ProgramData/ComposerSetup/bin/ninja-build"
-      - "C:/ProgramData/ComposerSetup/bin/ninja.com"
-      - "C:/ProgramData/ComposerSetup/bin/ninja.exe"
-      - "C:/ProgramData/ComposerSetup/bin/ninja"
-      - "C:/ProgramData/ComposerSetup/bin/samu.com"
-      - "C:/ProgramData/ComposerSetup/bin/samu.exe"
-      - "C:/ProgramData/ComposerSetup/bin/samu"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja-build.com"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja-build.exe"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja-build"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja.com"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja.exe"
-      - "C:/Users/USER/.config/herd/bin/nvm/ninja"
-      - "C:/Users/USER/.config/herd/bin/nvm/samu.com"
-      - "C:/Users/USER/.config/herd/bin/nvm/samu.exe"
-      - "C:/Users/USER/.config/herd/bin/nvm/samu"
-      - "C:/Program Files/nodejs/ninja-build.com"
-      - "C:/Program Files/nodejs/ninja-build.exe"
-      - "C:/Program Files/nodejs/ninja-build"
-      - "C:/Program Files/nodejs/ninja.com"
-      - "C:/Program Files/nodejs/ninja.exe"
-      - "C:/Program Files/nodejs/ninja"
-      - "C:/Program Files/nodejs/samu.com"
-      - "C:/Program Files/nodejs/samu.exe"
-      - "C:/Program Files/nodejs/samu"
-      - "C:/Program Files/Git/cmd/ninja-build.com"
-      - "C:/Program Files/Git/cmd/ninja-build.exe"
-      - "C:/Program Files/Git/cmd/ninja-build"
-      - "C:/Program Files/Git/cmd/ninja.com"
-      - "C:/Program Files/Git/cmd/ninja.exe"
-      - "C:/Program Files/Git/cmd/ninja"
-      - "C:/Program Files/Git/cmd/samu.com"
-      - "C:/Program Files/Git/cmd/samu.exe"
-      - "C:/Program Files/Git/cmd/samu"
-      - "C:/ProgramData/chocolatey/bin/ninja-build.com"
-      - "C:/ProgramData/chocolatey/bin/ninja-build.exe"
-      - "C:/ProgramData/chocolatey/bin/ninja-build"
-      - "C:/ProgramData/chocolatey/bin/ninja.com"
-      - "C:/ProgramData/chocolatey/bin/ninja.exe"
-      - "C:/ProgramData/chocolatey/bin/ninja"
-      - "C:/ProgramData/chocolatey/bin/samu.com"
-      - "C:/ProgramData/chocolatey/bin/samu.exe"
-      - "C:/ProgramData/chocolatey/bin/samu"
-      - "C:/Program Files (x86)/Nmap/ninja-build.com"
-      - "C:/Program Files (x86)/Nmap/ninja-build.exe"
-      - "C:/Program Files (x86)/Nmap/ninja-build"
-      - "C:/Program Files (x86)/Nmap/ninja.com"
-      - "C:/Program Files (x86)/Nmap/ninja.exe"
-      - "C:/Program Files (x86)/Nmap/ninja"
-      - "C:/Program Files (x86)/Nmap/samu.com"
-      - "C:/Program Files (x86)/Nmap/samu.exe"
-      - "C:/Program Files (x86)/Nmap/samu"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja-build.com"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja-build.exe"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja-build"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja.com"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja.exe"
-      - "C:/Program Files/PowerShell/7-preview/preview/ninja"
-      - "C:/Program Files/PowerShell/7-preview/preview/samu.com"
-      - "C:/Program Files/PowerShell/7-preview/preview/samu.exe"
-      - "C:/Program Files/PowerShell/7-preview/preview/samu"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja-build.com"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja-build.exe"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja-build"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja.com"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja.exe"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/ninja"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/samu.com"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/samu.exe"
-      - "C:/ProgramData/chocolatey/lib/nasm/tools/samu"
-      - "C:/nasm/ninja-build.com"
-      - "C:/nasm/ninja-build.exe"
-      - "C:/nasm/ninja-build"
-      - "C:/nasm/ninja.com"
-      - "C:/nasm/ninja.exe"
-      - "C:/nasm/ninja"
-      - "C:/nasm/samu.com"
-      - "C:/nasm/samu.exe"
-      - "C:/nasm/samu"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja-build.com"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja-build.exe"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja-build"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja.com"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja.exe"
-      - "C:/Program Files/MATLAB/R2025a/bin/ninja"
-      - "C:/Program Files/MATLAB/R2025a/bin/samu.com"
-      - "C:/Program Files/MATLAB/R2025a/bin/samu.exe"
-      - "C:/Program Files/MATLAB/R2025a/bin/samu"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja-build.com"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja-build.exe"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja-build"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja.com"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja.exe"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/ninja"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/samu.com"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/samu.exe"
-      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/samu"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja-build.com"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja-build.exe"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja-build"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja.com"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja.exe"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/ninja"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/samu.com"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/samu.exe"
-      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/samu"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja-build.com"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja-build.exe"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja-build"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja.com"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja.exe"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/ninja"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/samu.com"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/samu.exe"
-      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/samu"
-      - "E:/Android/Sdk/emulator/ninja-build.com"
-      - "E:/Android/Sdk/emulator/ninja-build.exe"
-      - "E:/Android/Sdk/emulator/ninja-build"
-      - "E:/Android/Sdk/emulator/ninja.com"
-      - "E:/Android/Sdk/emulator/ninja.exe"
-      - "E:/Android/Sdk/emulator/ninja"
-      - "E:/Android/Sdk/emulator/samu.com"
-      - "E:/Android/Sdk/emulator/samu.exe"
-      - "E:/Android/Sdk/emulator/samu"
-      - "E:/Android/Sdk/platform-tools/ninja-build.com"
-      - "E:/Android/Sdk/platform-tools/ninja-build.exe"
-      - "E:/Android/Sdk/platform-tools/ninja-build"
-      - "E:/Android/Sdk/platform-tools/ninja.com"
-      - "E:/Android/Sdk/platform-tools/ninja.exe"
-      - "E:/Android/Sdk/platform-tools/ninja"
-      - "E:/Android/Sdk/platform-tools/samu.com"
-      - "E:/Android/Sdk/platform-tools/samu.exe"
-      - "E:/Android/Sdk/platform-tools/samu"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja-build.com"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja-build.exe"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja-build"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja.com"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja.exe"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/ninja"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/samu.com"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/samu.exe"
-      - "E:/Android/Sdk/cmdline-tools/latest/bin/samu"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja-build.com"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja-build.exe"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja-build"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja.com"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja.exe"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/ninja"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/samu.com"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/samu.exe"
-      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/samu"
-      - "C:/mingw64/bin/ninja-build.com"
-      - "C:/mingw64/bin/ninja-build.exe"
-      - "C:/mingw64/bin/ninja-build"
-      - "C:/mingw64/bin/ninja.com"
-    found: "C:/mingw64/bin/ninja.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mingw32-make.exe.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mingw32-make.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mingw32-make.exe"
+      - "C:/Windows/System32/mingw32-make.exe.com"
+      - "C:/Windows/System32/mingw32-make.exe"
+      - "C:/Windows/mingw32-make.exe.com"
+      - "C:/Windows/mingw32-make.exe"
+      - "C:/Windows/System32/wbem/mingw32-make.exe.com"
+      - "C:/Windows/System32/wbem/mingw32-make.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mingw32-make.exe"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe.com"
+      - "C:/Windows/System32/OpenSSH/mingw32-make.exe"
+      - "C:/Program Files/dotnet/mingw32-make.exe.com"
+      - "C:/Program Files/dotnet/mingw32-make.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/mingw32-make.exe.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/mingw32-make.exe"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/mingw32-make.exe.com"
+      - "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/mingw32-make.exe"
+      - "C:/xampp/php/mingw32-make.exe.com"
+      - "C:/xampp/php/mingw32-make.exe"
+      - "C:/Program Files/Java/jdk-21/bin/mingw32-make.exe.com"
+      - "C:/Program Files/Java/jdk-21/bin/mingw32-make.exe"
+      - "C:/Users/USER/.android/studio/gradle-8.7/bin/mingw32-make.exe.com"
+      - "C:/Users/USER/.android/studio/gradle-8.7/bin/mingw32-make.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mingw32-make.exe"
+      - "C:/Program Files/php-8.3.12/mingw32-make.exe.com"
+      - "C:/Program Files/php-8.3.12/mingw32-make.exe"
+      - "C:/ProgramData/ComposerSetup/bin/mingw32-make.exe.com"
+      - "C:/ProgramData/ComposerSetup/bin/mingw32-make.exe"
+      - "C:/Users/USER/.config/herd/bin/nvm/mingw32-make.exe.com"
+      - "C:/Users/USER/.config/herd/bin/nvm/mingw32-make.exe"
+      - "C:/Program Files/nodejs/mingw32-make.exe.com"
+      - "C:/Program Files/nodejs/mingw32-make.exe"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe.com"
+      - "C:/Program Files/Git/cmd/mingw32-make.exe"
+      - "C:/ProgramData/chocolatey/bin/mingw32-make.exe.com"
+      - "C:/ProgramData/chocolatey/bin/mingw32-make.exe"
+      - "C:/Program Files (x86)/Nmap/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Nmap/mingw32-make.exe"
+      - "C:/Program Files/PowerShell/7-preview/preview/mingw32-make.exe.com"
+      - "C:/Program Files/PowerShell/7-preview/preview/mingw32-make.exe"
+      - "C:/ProgramData/chocolatey/lib/nasm/tools/mingw32-make.exe.com"
+      - "C:/ProgramData/chocolatey/lib/nasm/tools/mingw32-make.exe"
+      - "C:/nasm/mingw32-make.exe.com"
+      - "C:/nasm/mingw32-make.exe"
+      - "C:/Program Files/MATLAB/R2025a/bin/mingw32-make.exe.com"
+      - "C:/Program Files/MATLAB/R2025a/bin/mingw32-make.exe"
+      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/mingw32-make.exe.com"
+      - "C:/Users/USER/AppData/Local/Pub/Cache/bin/mingw32-make.exe"
+      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/mingw32-make.exe.com"
+      - "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/mingw32-make.exe"
+      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/mingw32-make.exe.com"
+      - "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/mingw32-make.exe"
+      - "E:/Android/Sdk/emulator/mingw32-make.exe.com"
+      - "E:/Android/Sdk/emulator/mingw32-make.exe"
+      - "E:/Android/Sdk/platform-tools/mingw32-make.exe.com"
+      - "E:/Android/Sdk/platform-tools/mingw32-make.exe"
+      - "E:/Android/Sdk/cmdline-tools/latest/bin/mingw32-make.exe.com"
+      - "E:/Android/Sdk/cmdline-tools/latest/bin/mingw32-make.exe"
+      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/mingw32-make.exe.com"
+      - "C:/Users/USER/Downloads/x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj/mingw/bin/mingw32-make.exe"
+      - "C:/mingw64/bin/mingw32-make.exe.com"
+    found: "C:/mingw64/bin/mingw32-make.exe"
     search_context:
       ENV{PATH}:
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5615,8 +5383,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-flpyu6"
-      binary: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-flpyu6"
+      source: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv"
+      binary: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -5625,10 +5393,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-flpyu6'
+        Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv'
         
-        Run Build Command(s): C:/mingw64/bin/ninja.exe -v cmTC_2468e
-        [1/2] C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj -c C:/mingw64/share/cmake-4.1/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_70a65/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_70a65.dir\\build.make CMakeFiles/cmTC_70a65.dir/build
+        mingw32-make[1]: Entering directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv'
+        Building C object CMakeFiles/cmTC_70a65.dir/CMakeCCompilerABI.c.obj
+        C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj -c C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -5637,8 +5408,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/mingw64/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2468e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\cc7JjQGm.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_70a65.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\cclJtGUD.s
         GNU C23 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -5657,13 +5428,14 @@ events:
          /mingw/include
         End of search list.
         Compiler executable checksum: a02be5f83052a7496f6ecf0060ad7c77
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj C:\\Users\\USER\\AppData\\Local\\Temp\\cc7JjQGm.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj C:\\Users\\USER\\AppData\\Local\\Temp\\cclJtGUD.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r2) 2.45
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;/mingw/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj -o cmTC_2468e.exe -Wl,--out-implib,libcmTC_2468e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.'
+        Linking C executable cmTC_70a65.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_70a65.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -5675,12 +5447,16 @@ events:
         gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;/mingw/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2468e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2468e.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\cctD5TIF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2468e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2468e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a65.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_70a65.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccsqSwqn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_70a65.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_70a65.dir/objects.a --no-whole-archive --out-implib libcmTC_70a65.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\cctD5TIF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2468e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2468e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccsqSwqn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_70a65.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_70a65.dir/objects.a --no-whole-archive --out-implib libcmTC_70a65.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r2) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2468e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2468e.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a65.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_70a65.'
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_70a65.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_70a65.dir/objects.a @CMakeFiles\\cmTC_70a65.dir\\objects1.rsp
+        C:\\mingw64\\bin\\gcc.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_70a65.dir/objects.a -Wl,--no-whole-archive -o cmTC_70a65.exe -Wl,--out-implib,libcmTC_70a65.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv'
         
       exitCode: 0
   -
@@ -5717,10 +5493,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-flpyu6']
+        ignore line: [Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/mingw64/bin/ninja.exe -v cmTC_2468e]
-        ignore line: [[1/2] C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj -c C:/mingw64/share/cmake-4.1/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_70a65/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_70a65.dir\\build.make CMakeFiles/cmTC_70a65.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-3carsv']
+        ignore line: [Building C object CMakeFiles/cmTC_70a65.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\mingw64\\bin\\gcc.exe   -v -o CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj -c C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -5729,8 +5508,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/mingw64/share/cmake-4.1/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_2468e.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\cc7JjQGm.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles\\cmTC_70a65.dir\\ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\cclJtGUD.s]
         ignore line: [GNU C23 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r2) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -5749,8 +5528,8 @@ events:
         ignore line: [ /mingw/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: a02be5f83052a7496f6ecf0060ad7c77]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj C:\\Users\\USER\\AppData\\Local\\Temp\\cc7JjQGm.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj C:\\Users\\USER\\AppData\\Local\\Temp\\cclJtGUD.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders  r2) 2.45]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -5763,8 +5542,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\mingw64\\bin\\gcc.exe  -v -Wl -v CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj -o cmTC_2468e.exe -Wl --out-implib libcmTC_2468e.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_70a65.dir\\CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_70a65.exe]
+        ignore line: [C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_70a65.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\gcc.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -5785,13 +5565,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2468e.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_2468e.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\cctD5TIF.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_2468e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_2468e.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_70a65.exe' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_70a65.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccsqSwqn.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_70a65.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_70a65.dir/objects.a --no-whole-archive --out-implib libcmTC_70a65.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\cctD5TIF.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccsqSwqn.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -5813,7 +5593,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_2468e.exe] ==> ignore
+          arg [cmTC_70a65.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -5825,9 +5605,11 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-L/mingw/lib] ==> dir [/mingw/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_2468e.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_70a65.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_2468e.dll.a] ==> ignore
+          arg [libcmTC_70a65.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -5911,8 +5693,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-0zqgq4"
-      binary: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-0zqgq4"
+      source: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp"
+      binary: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -5922,10 +5704,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-0zqgq4'
+        Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp'
         
-        Run Build Command(s): C:/mingw64/bin/ninja.exe -v cmTC_6263e
-        [1/2] C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj -c C:/mingw64/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8fbbd/fast
+        C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8fbbd.dir\\build.make CMakeFiles/cmTC_8fbbd.dir/build
+        mingw32-make[1]: Entering directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp'
+        Building CXX object CMakeFiles/cmTC_8fbbd.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         OFFLOAD_TARGET_NAMES=nvptx-none
@@ -5934,8 +5719,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/mingw64/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6263e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\ccCxOSXL.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_8fbbd.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\ccrNjlXH.s
         GNU C++17 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -5960,13 +5745,14 @@ events:
          /mingw/include
         End of search list.
         Compiler executable checksum: 0c2bf3108102e2705115eefdf78cfeb9
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/'
-         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\USER\\AppData\\Local\\Temp\\ccCxOSXL.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\'
+         C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\USER\\AppData\\Local\\Temp\\ccrNjlXH.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r2) 2.45
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;/mingw/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6263e.exe -Wl,--out-implib,libcmTC_6263e.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_8fbbd.exe
+        C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_8fbbd.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -5978,12 +5764,16 @@ events:
         gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 
         COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../libexec/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/mingw64/bin/../lib/gcc/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;/mingw/lib/../lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../;/mingw/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6263e.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6263e.'
-         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccaFSBba.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_6263e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_6263e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8fbbd.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8fbbd.'
+         C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccFkNesa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8fbbd.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_8fbbd.dir/objects.a --no-whole-archive --out-implib libcmTC_8fbbd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccaFSBba.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_6263e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_6263e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccFkNesa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8fbbd.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_8fbbd.dir/objects.a --no-whole-archive --out-implib libcmTC_8fbbd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (Binutils for MinGW-W64 x86_64, built by Brecht Sanders, r2) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6263e.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6263e.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8fbbd.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8fbbd.'
+        C:\\mingw64\\bin\\cmake.exe -E rm -f CMakeFiles\\cmTC_8fbbd.dir/objects.a
+        C:\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_8fbbd.dir/objects.a @CMakeFiles\\cmTC_8fbbd.dir\\objects1.rsp
+        C:\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_8fbbd.dir/objects.a -Wl,--no-whole-archive -o cmTC_8fbbd.exe -Wl,--out-implib,libcmTC_8fbbd.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make[1]: Leaving directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp'
         
       exitCode: 0
   -
@@ -6026,10 +5816,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-0zqgq4']
+        ignore line: [Change Dir: 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/mingw64/bin/ninja.exe -v cmTC_6263e]
-        ignore line: [[1/2] C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj -c C:/mingw64/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): C:/mingw64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8fbbd/fast]
+        ignore line: [C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8fbbd.dir\\build.make CMakeFiles/cmTC_8fbbd.dir/build]
+        ignore line: [mingw32-make[1]: Entering directory 'C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/CMakeScratch/TryCompile-tsndwp']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8fbbd.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj -c C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
@@ -6038,8 +5831,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/']
-        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/mingw64/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6263e.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\ccCxOSXL.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\']
+        ignore line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\mingw64\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_8fbbd.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o C:\\Users\\USER\\AppData\\Local\\Temp\\ccrNjlXH.s]
         ignore line: [GNU C++17 (MinGW-W64 x86_64-ucrt-posix-seh  built by Brecht Sanders  r2) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -6064,8 +5857,8 @@ events:
         ignore line: [ /mingw/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 0c2bf3108102e2705115eefdf78cfeb9]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/']
-        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\USER\\AppData\\Local\\Temp\\ccCxOSXL.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\']
+        ignore line: [ C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\USER\\AppData\\Local\\Temp\\ccrNjlXH.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (Binutils for MinGW-W64 x86_64  built by Brecht Sanders  r2) 2.45]
         ignore line: [COMPILER_PATH=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/mingw64/bin/../libexec/gcc/]
@@ -6078,8 +5871,9 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_6263e.exe -Wl --out-implib libcmTC_6263e.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles\\cmTC_8fbbd.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_8fbbd.exe]
+        ignore line: [C:\\mingw64\\bin\\cmake.exe -E cmake_link_script CMakeFiles\\cmTC_8fbbd.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -6100,13 +5894,13 @@ events:
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
         ignore line: [/mingw/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6263e.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6263e.']
-        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccaFSBba.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_6263e.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_6263e.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8fbbd.exe' '-foffload-options=-l_GCC_stdc++' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8fbbd.']
+        link line: [ C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccFkNesa.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_8fbbd.exe C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/mingw64/bin/../lib/gcc -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -L/mingw/lib/../lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -L/mingw/lib -v --whole-archive CMakeFiles\\cmTC_8fbbd.dir/objects.a --no-whole-archive --out-implib libcmTC_8fbbd.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/mingw64/bin/../libexec/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccaFSBba.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\USER\\AppData\\Local\\Temp\\ccFkNesa.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -6128,7 +5922,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_6263e.exe] ==> ignore
+          arg [cmTC_8fbbd.exe] ==> ignore
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -6140,9 +5934,11 @@ events:
           arg [-LC:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-L/mingw/lib] ==> dir [/mingw/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_6263e.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [CMakeFiles\\cmTC_8fbbd.dir/objects.a] ==> ignore
+          arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_6263e.dll.a] ==> ignore
+          arg [libcmTC_8fbbd.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -6468,2308 +6264,27 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/mingw64/OpenCVConfig.cmake"
+        path: "E:/Android/Sdk/emulator/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/mingw64/opencv-config.cmake"
+        path: "E:/Android/Sdk/emulator/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
+        path: "E:/Android/Sdk/platform-tools/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
+        path: "E:/Android/Sdk/platform-tools/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/OpenCVConfig.cmake"
+        path: "E:/Android/Sdk/cmdline-tools/latest/OpenCVConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\xampp\\php"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\Users\\USER\\.android\\studio\\gradle-8.7\\bin"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\php-8.3.12"
-        - "C:\\ProgramData\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\.config\\herd\\bin\\nvm"
-        - "C:\\Program Files\\nodejs"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files (x86)\\Nmap"
-        - "C:\\Program Files\\PowerShell\\7-preview\\preview"
-        - "C:\\ProgramData\\chocolatey\\lib\\nasm\\tools"
-        - "C:\\nasm"
-        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\bin"
-        - "C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "E:\\Android\\Sdk\\emulator"
-        - "E:\\Android\\Sdk\\platform-tools"
-        - "E:\\Android\\Sdk\\cmdline-tools\\latest\\bin"
-        - "C:\\Users\\USER\\Downloads\\x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj\\mingw\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\dart-sdk\\bin"
-        - "C:\\flutter\\bin"
-        - "C:\\Program Files\\JetBrains\\PyCharm Edu 2022.2.2\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\gradle-8.7\\bin"
-        - "C:\\dart-sdk\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Users\\USER\\Downloads\\Compressed\\platform-tools"
-        - "C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\Downloads\\platform-tools-latest-windows\\platform-tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/video-generator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/mingw64"
-        - "C:/Program Files (x86)/video-generator"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "OpenCV"
-    components:
-      -
-        name: "PATH"
-        required: true
-        found: false
-      -
-        name: "C:\\opencv\\build\\x64\\vc16\\lib"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "OpenCVConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "opencv-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "OpenCV"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/opencv/build/x64/vc16/OpenCVConfig.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/opencv/build/x64/vc16/opencv-config.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\xampp\\php"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\Users\\USER\\.android\\studio\\gradle-8.7\\bin"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\php-8.3.12"
-        - "C:\\ProgramData\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\.config\\herd\\bin\\nvm"
-        - "C:\\Program Files\\nodejs"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files (x86)\\Nmap"
-        - "C:\\Program Files\\PowerShell\\7-preview\\preview"
-        - "C:\\ProgramData\\chocolatey\\lib\\nasm\\tools"
-        - "C:\\nasm"
-        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\bin"
-        - "C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "E:\\Android\\Sdk\\emulator"
-        - "E:\\Android\\Sdk\\platform-tools"
-        - "E:\\Android\\Sdk\\cmdline-tools\\latest\\bin"
-        - "C:\\Users\\USER\\Downloads\\x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj\\mingw\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\dart-sdk\\bin"
-        - "C:\\flutter\\bin"
-        - "C:\\Program Files\\JetBrains\\PyCharm Edu 2022.2.2\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\gradle-8.7\\bin"
-        - "C:\\dart-sdk\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Users\\USER\\Downloads\\Compressed\\platform-tools"
-        - "C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\Downloads\\platform-tools-latest-windows\\platform-tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/video-generator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/mingw64"
-        - "C:/Program Files (x86)/video-generator"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "OpenCV"
-    components:
-      -
-        name: "PATH"
-        required: true
-        found: false
-      -
-        name: "C:\\opencv\\build\\x64\\vc16\\lib"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "OpenCVConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "opencv-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "OpenCV"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/opencv/build/x64/vc16/OpenCVConfig.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/opencv/build/x64/vc16/opencv-config.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\xampp\\php"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\Users\\USER\\.android\\studio\\gradle-8.7\\bin"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\php-8.3.12"
-        - "C:\\ProgramData\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\.config\\herd\\bin\\nvm"
-        - "C:\\Program Files\\nodejs"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files (x86)\\Nmap"
-        - "C:\\Program Files\\PowerShell\\7-preview\\preview"
-        - "C:\\ProgramData\\chocolatey\\lib\\nasm\\tools"
-        - "C:\\nasm"
-        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\bin"
-        - "C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "E:\\Android\\Sdk\\emulator"
-        - "E:\\Android\\Sdk\\platform-tools"
-        - "E:\\Android\\Sdk\\cmdline-tools\\latest\\bin"
-        - "C:\\Users\\USER\\Downloads\\x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj\\mingw\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\dart-sdk\\bin"
-        - "C:\\flutter\\bin"
-        - "C:\\Program Files\\JetBrains\\PyCharm Edu 2022.2.2\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\gradle-8.7\\bin"
-        - "C:\\dart-sdk\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Users\\USER\\Downloads\\Compressed\\platform-tools"
-        - "C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\Downloads\\platform-tools-latest-windows\\platform-tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/video-generator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/mingw64"
-        - "C:/Program Files (x86)/video-generator"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "OpenCV"
-    components:
-      -
-        name: "PATH"
-        required: true
-        found: false
-      -
-        name: "C:\\opencv\\build\\x64\\vc16\\lib"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "OpenCVConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "opencv-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "OpenCV"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/opencv/build/x64/vc16/OpenCVConfig.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/opencv/build/x64/vc16/opencv-config.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\xampp\\php"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\Users\\USER\\.android\\studio\\gradle-8.7\\bin"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\php-8.3.12"
-        - "C:\\ProgramData\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\.config\\herd\\bin\\nvm"
-        - "C:\\Program Files\\nodejs"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files (x86)\\Nmap"
-        - "C:\\Program Files\\PowerShell\\7-preview\\preview"
-        - "C:\\ProgramData\\chocolatey\\lib\\nasm\\tools"
-        - "C:\\nasm"
-        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\bin"
-        - "C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "E:\\Android\\Sdk\\emulator"
-        - "E:\\Android\\Sdk\\platform-tools"
-        - "E:\\Android\\Sdk\\cmdline-tools\\latest\\bin"
-        - "C:\\Users\\USER\\Downloads\\x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj\\mingw\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\dart-sdk\\bin"
-        - "C:\\flutter\\bin"
-        - "C:\\Program Files\\JetBrains\\PyCharm Edu 2022.2.2\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\gradle-8.7\\bin"
-        - "C:\\dart-sdk\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Users\\USER\\Downloads\\Compressed\\platform-tools"
-        - "C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\Downloads\\platform-tools-latest-windows\\platform-tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/video-generator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/mingw64"
-        - "C:/Program Files (x86)/video-generator"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "OpenCV"
-    components:
-      -
-        name: "PATH"
-        required: true
-        found: false
-      -
-        name: "C:\\opencv\\build\\x64\\vc16\\lib"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "OpenCVConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "opencv-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "OpenCV"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/opencv/build/x64/vc16/OpenCVConfig.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/opencv/build/x64/vc16/opencv-config.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/mingw64/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Launcher/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Microsoft/WindowsApps/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/flutter/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Microsoft VS Code/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/dart-sdk/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/GitHubDesktop/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/MinGW/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/ComposerSetup/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/Downloads/platform-tools-latest-windows/platform-tools/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/CMake/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-    found: null
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
-        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\xampp\\php"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\Users\\USER\\.android\\studio\\gradle-8.7\\bin"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\php-8.3.12"
-        - "C:\\ProgramData\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\.config\\herd\\bin\\nvm"
-        - "C:\\Program Files\\nodejs"
-        - "C:\\Program Files\\Git\\cmd"
-        - "C:\\ProgramData\\chocolatey\\bin"
-        - "C:\\Program Files (x86)\\Nmap"
-        - "C:\\Program Files\\PowerShell\\7-preview\\preview"
-        - "C:\\ProgramData\\chocolatey\\lib\\nasm\\tools"
-        - "C:\\nasm"
-        - "C:\\Program Files\\MATLAB\\R2025a\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Pub\\Cache\\bin"
-        - "C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL"
-        - "E:\\Android\\Sdk\\emulator"
-        - "E:\\Android\\Sdk\\platform-tools"
-        - "E:\\Android\\Sdk\\cmdline-tools\\latest\\bin"
-        - "C:\\Users\\USER\\Downloads\\x86_64-mingw32-gcc-4.7.0-release-c,c++,fortran-sjlj\\mingw\\bin"
-        - "C:\\mingw64\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\USER\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Program Files\\dart-sdk\\bin"
-        - "C:\\flutter\\bin"
-        - "C:\\Program Files\\JetBrains\\PyCharm Edu 2022.2.2\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Program Files\\Java\\jdk-21\\bin"
-        - "C:\\gradle-8.7\\bin"
-        - "C:\\dart-sdk\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\MinGW\\bin"
-        - "C:\\Users\\USER\\Downloads\\Compressed\\platform-tools"
-        - "C:\\Users\\USER\\AppData\\Roaming\\Composer\\vendor\\bin"
-        - "C:\\Users\\USER\\AppData\\Local\\ComposerSetup\\bin"
-        - "C:\\Users\\USER\\Downloads\\platform-tools-latest-windows\\platform-tools"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/video-generator"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/mingw64"
-        - "C:/Program Files (x86)/video-generator"
-...
-
----
-events:
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:4 (find_package)"
-    name: "OpenCV"
-    components:
-      -
-        name: "PATH"
-        required: true
-        found: false
-      -
-        name: "C:\\opencv\\build\\x64\\vc16\\lib"
-        required: true
-        found: false
-    configs:
-      -
-        filename: "OpenCVConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "opencv-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "required_explicit"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "OpenCV"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "C:/opencv/build/x64/vc16/OpenCVConfig.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/opencv/build/x64/vc16/opencv-config.cmake"
-        mode: "none?"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/c++_projects/Recordify/hani_screen_shot/build/CMakeFiles/pkgRedirects/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Common Files/Oracle/Java/javapath/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/wbem/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/WindowsPowerShell/v1.0/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Windows/System32/OpenSSH/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/dotnet/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Programs/Python/Python312/Scripts/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/xampp/php/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Java/jdk-21/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.android/studio/gradle-8.7/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/php-8.3.12/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/.config/herd/bin/nvm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/nodejs/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Git/cmd/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/ProgramData/chocolatey/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Nmap/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/PowerShell/7-preview/preview/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/nasm/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/MATLAB/R2025a/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Users/USER/AppData/Local/Pub/Cache/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/OpenCVConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "C:/Program Files/Intel/Intel(R) Management Engine Components/DAL/opencv-config.cmake"
+        path: "E:/Android/Sdk/cmdline-tools/latest/opencv-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
