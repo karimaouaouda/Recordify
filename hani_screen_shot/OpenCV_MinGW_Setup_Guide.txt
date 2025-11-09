@@ -111,6 +111,7 @@ del CMakeCache.txt
 rmdir /s /q CMakeFiles
 ```
 
+
 ### 5.2. Configure Project with CMake
 
 Explicitly tell CMake where to find your MinGW-compatible OpenCV installation.
