@@ -32,6 +32,7 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
+  C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
   C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
   C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
   C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
@@ -139,6 +140,7 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
   C:/mingw64/include/c++/15.2.0/ext/string_conversions.h \
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
+  C:/mingw64/include/c++/15.2.0/fstream \
   C:/mingw64/include/c++/15.2.0/functional \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iomanip \
@@ -188,8 +190,10 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/utility \
   C:/mingw64/include/c++/15.2.0/vector \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -517,6 +521,16 @@ E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core.hpp:
 
 E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/calib3d.hpp:
 
+C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/sampling.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
+
 C:/mingw64/include/c++/15.2.0/cstring:
 
 C:/mingw64/include/c++/15.2.0/concepts:
@@ -575,6 +589,8 @@ C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
 
 C:/mingw64/include/c++/15.2.0/cmath:
 
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
@@ -594,10 +610,6 @@ C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 C:/mingw64/include/c++/15.2.0/backward/binders.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_deque.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/sampling.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
 C:/mingw64/include/c++/15.2.0/bits/std_mutex.h:
 
@@ -619,6 +631,10 @@ C:/mingw64/include/c++/15.2.0/bits/stl_function.h:
 
 C:/mingw64/include/c++/15.2.0/bits/quoted_string.h:
 
+C:/mingw64/include/c++/15.2.0/bits/postypes.h:
+
+C:/mingw64/include/c++/15.2.0/exception:
+
 C:/mingw64/include/c++/15.2.0/algorithm:
 
 C:/mingw64/include/c++/15.2.0/bits/enable_special_members.h:
@@ -637,8 +653,6 @@ C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
 
-C:/mingw64/include/c++/15.2.0/bits/locale_classes.h:
-
 C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
 
 C:/mingw64/include/c++/15.2.0/bits/charconv.h:
@@ -649,15 +663,7 @@ C:/mingw64/include/c++/15.2.0/cfloat:
 
 C:/mingw64/include/c++/15.2.0/bits/concept_check.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
-
 C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util.hpp:
-
-C:/mingw64/include/c++/15.2.0/bits/version.h:
-
-C:/mingw64/include/c++/15.2.0/bits/erase_if.h:
 
 C:/mingw64/include/c++/15.2.0/ios:
 
@@ -667,15 +673,23 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
 C:/mingw64/include/c++/15.2.0/cstdlib:
 
-C:/mingw64/include/c++/15.2.0/cwctype:
-
-C:/mingw64/include/c++/15.2.0/bits/basic_ios.h:
-
 C:/mingw64/include/c++/15.2.0/bits/stl_relops.h:
 
 C:/mingw64/include/c++/15.2.0/bits/ostream.h:
 
 C:/c++_projects/Recordify/hani_screen_shot/video-generator.cpp:
+
+E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util.hpp:
+
+C:/mingw64/include/c++/15.2.0/bits/erase_if.h:
+
+C:/mingw64/include/c++/15.2.0/bits/version.h:
+
+C:/mingw64/include/c++/15.2.0/bits/locale_classes.h:
+
+C:/mingw64/include/c++/15.2.0/bits/basic_ios.h:
+
+C:/mingw64/include/c++/15.2.0/cwctype:
 
 E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kdtree_single_index.h:
 
@@ -710,14 +724,6 @@ E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/ml/ml.inl.hpp:
 C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
-
-C:/mingw64/include/c++/15.2.0/bit:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
-
-C:/mingw64/include/c++/15.2.0/bits/postypes.h:
-
-C:/mingw64/include/c++/15.2.0/exception:
 
 C:/mingw64/include/c++/15.2.0/complex:
 
@@ -760,6 +766,12 @@ E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/hierarchical_
 C:/mingw64/include/c++/15.2.0/bits/deque.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/parse_numbers.h:
+
+C:/mingw64/include/c++/15.2.0/bit:
+
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/utility.h:
 
@@ -843,13 +855,13 @@ C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
 
 C:/mingw64/include/c++/15.2.0/bits/list.tcc:
 
+C:/mingw64/include/c++/15.2.0/fstream:
+
 C:/mingw64/include/c++/15.2.0/bits/chrono.h:
 
 C:/mingw64/include/c++/15.2.0/map:
 
 C:/mingw64/include/c++/15.2.0/typeinfo:
-
-C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
 
@@ -997,8 +1009,6 @@ C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdarg.h:
 
-C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
-
 C:/mingw64/include/c++/15.2.0/bits/hashtable.h:
 
 C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
@@ -1026,6 +1036,8 @@ C:/mingw64/include/c++/15.2.0/bits/allocator.h:
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
+
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h:
 
 C:/mingw64/include/c++/15.2.0/clocale:
 
@@ -1095,8 +1107,8 @@ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
+C:/mingw64/include/c++/15.2.0/bits/fstream.tcc:
+
 C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/wctype.h:

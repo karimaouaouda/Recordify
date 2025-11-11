@@ -366,4 +366,8 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: \
  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/camera.hpp \
  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video.hpp \
  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/tracking.hpp \
- E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/background_segm.hpp
+ E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/background_segm.hpp \
+ C:/mingw64/include/c++/15.2.0/fstream \
+ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/mingw64/include/c++/15.2.0/bits/fstream.tcc
