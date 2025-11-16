@@ -32,7 +32,6 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/bits/exception.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_defines.h \
   C:/mingw64/include/c++/15.2.0/bits/exception_ptr.h \
-  C:/mingw64/include/c++/15.2.0/bits/fstream.tcc \
   C:/mingw64/include/c++/15.2.0/bits/functexcept.h \
   C:/mingw64/include/c++/15.2.0/bits/functional_hash.h \
   C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h \
@@ -140,7 +139,6 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/ext/numeric_traits.h \
   C:/mingw64/include/c++/15.2.0/ext/string_conversions.h \
   C:/mingw64/include/c++/15.2.0/ext/type_traits.h \
-  C:/mingw64/include/c++/15.2.0/fstream \
   C:/mingw64/include/c++/15.2.0/functional \
   C:/mingw64/include/c++/15.2.0/initializer_list \
   C:/mingw64/include/c++/15.2.0/iomanip \
@@ -190,10 +188,8 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/include/c++/15.2.0/utility \
   C:/mingw64/include/c++/15.2.0/vector \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
-  C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -262,274 +258,264 @@ CMakeFiles/video-generator.dir/video-generator.cpp.obj: C:/c++_projects/Recordif
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/calib3d.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/affine.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/async.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/base.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/bufferpool.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/check.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda_types.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cv_cpu_dispatch.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvdef.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd_wrapper.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/fast_math.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/hal/interface.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/mat.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/mat.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/matx.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/matx.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/neon_utils.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/operations.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/optim.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/ovx.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/persistence.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/saturate.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/traits.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/types.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utility.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logger.defines.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logger.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logtag.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/version.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/vsx_utils.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dict.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dnn.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dnn.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/layer.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/utils/inference_engine.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/version.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/features2d.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/all_indices.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/allocator.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/any.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/autotuned_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/composite_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/config.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/defines.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/dist.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/dynamic_bitset.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/flann_base.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/general.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/ground_truth.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/heap.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/hierarchical_clustering_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/index_testing.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kdtree_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kdtree_single_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kmeans_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/linear_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/logger.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/lsh_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/lsh_table.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/matrix.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/miniflann.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/nn_index.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/params.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/random.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/result_set.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/sampling.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/saving.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/timer.h \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/highgui.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgcodecs.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgproc.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgproc/segmentation.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/ml.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/ml/ml.inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_board.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_detector.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_dictionary.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/barcode.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/charuco_detector.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/detection_based_tracker.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/face.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/graphical_code_detector.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/opencv.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/opencv_modules.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/photo.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/blenders.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/camera.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/exposure_compensate.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/matchers.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/motion_estimators.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/seam_finders.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util_inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/warpers.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/warpers_inl.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/warpers.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/background_segm.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/tracking.hpp \
-  E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/videoio.hpp
+  C:/new-opencv/opencv/include/opencv2/opencv.hpp \
+  C:/new-opencv/opencv/modules/calib3d/include/opencv2/calib3d.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/affine.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/async.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/base.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/check.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda.inl.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda_types.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cvdef.h \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/fast_math.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/hal/interface.h \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/mat.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/matx.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/matx.inl.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/neon_utils.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/operations.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/optim.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/ovx.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/saturate.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/traits.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/types.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/utility.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logger.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logtag.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/version.hpp \
+  C:/new-opencv/opencv/modules/core/include/opencv2/core/vsx_utils.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dict.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/layer.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp \
+  C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/version.hpp \
+  C:/new-opencv/opencv/modules/features2d/include/opencv2/features2d.hpp \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann.hpp \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/all_indices.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/allocator.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/any.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/autotuned_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/composite_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/config.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/defines.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/dist.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/flann_base.hpp \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/general.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/ground_truth.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/heap.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/index_testing.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kdtree_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kmeans_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/linear_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/logger.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/lsh_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/lsh_table.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/matrix.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/miniflann.hpp \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/nn_index.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/params.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/random.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/result_set.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/sampling.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/saving.h \
+  C:/new-opencv/opencv/modules/flann/include/opencv2/flann/timer.h \
+  C:/new-opencv/opencv/modules/highgui/include/opencv2/highgui.hpp \
+  C:/new-opencv/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp \
+  C:/new-opencv/opencv/modules/imgproc/include/opencv2/imgproc.hpp \
+  C:/new-opencv/opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp \
+  C:/new-opencv/opencv/modules/ml/include/opencv2/ml.hpp \
+  C:/new-opencv/opencv/modules/ml/include/opencv2/ml/ml.inl.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_board.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_detector.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_dictionary.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/barcode.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/charuco_detector.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/face.hpp \
+  C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/graphical_code_detector.hpp \
+  C:/new-opencv/opencv/modules/photo/include/opencv2/photo.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp \
+  C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp \
+  C:/new-opencv/opencv/modules/video/include/opencv2/video.hpp \
+  C:/new-opencv/opencv/modules/video/include/opencv2/video/background_segm.hpp \
+  C:/new-opencv/opencv/modules/video/include/opencv2/video/tracking.hpp \
+  C:/new-opencv/opencv/modules/videoio/include/opencv2/videoio.hpp \
+  C:/new-opencv/opencv/opencv-build/opencv2/opencv_modules.hpp
 
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/videoio.hpp:
+C:/new-opencv/opencv/modules/videoio/include/opencv2/videoio.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/tracking.hpp:
+C:/new-opencv/opencv/modules/video/include/opencv2/video/background_segm.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video.hpp:
+C:/new-opencv/opencv/modules/video/include/opencv2/video.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/warpers.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/warpers_inl.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/matchers.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/exposure_compensate.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/blenders.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/opencv_modules.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/opencv.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/graphical_code_detector.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/face.hpp:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/graphical_code_detector.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/detection_based_tracker.hpp:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/face.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/charuco_detector.hpp:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/barcode.hpp:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/charuco_detector.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_dictionary.hpp:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_board.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect.hpp:
+C:/new-opencv/opencv/modules/ml/include/opencv2/ml.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgcodecs.hpp:
+C:/new-opencv/opencv/modules/imgproc/include/opencv2/imgproc.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/timer.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/timer.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/params.h:
+C:/new-opencv/opencv/modules/ml/include/opencv2/ml/ml.inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/nn_index.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/saving.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/miniflann.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/sampling.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/matrix.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/result_set.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/lsh_table.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/params.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/lsh_index.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/nn_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/linear_index.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/miniflann.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kdtree_index.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/matrix.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/index_testing.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/lsh_table.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/ground_truth.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/logger.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/flann_base.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/linear_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/dynamic_bitset.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kmeans_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/dist.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kdtree_single_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/defines.h:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/barcode.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util_inl.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/index_testing.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/autotuned_index.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/hierarchical_clustering_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/allocator.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/ground_truth.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/all_indices.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/flann_base.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/version.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/dist.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/saving.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/defines.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/layer.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/autotuned_index.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dnn.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/any.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/any.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/allocator.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dict.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/all_indices.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/vsx_utils.hpp:
+C:/new-opencv/opencv/modules/features2d/include/opencv2/features2d.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/version.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/version.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logger.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logger.defines.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/layer.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utility.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dnn.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/types.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgproc/segmentation.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/vsx_utils.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/traits.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/version.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/saturate.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logtag.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/persistence.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logger.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/ovx.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/utility.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/optim.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/types.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/matx.inl.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/traits.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/mat.inl.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/ovx.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/mat.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/optim.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/hal/interface.h:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/operations.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/matx.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/matx.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/fast_math.hpp:
+C:/new-opencv/opencv/modules/highgui/include/opencv2/highgui.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd_wrapper.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/mat.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd.inl.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/fast_math.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvstd.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cv_cpu_dispatch.h:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda_types.hpp:
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/warpers.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cvdef.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/bufferpool.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/base.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda_types.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/affine.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda.inl.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/async.hpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/calib3d.hpp:
-
-C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/sampling.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/time.h:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/affine.hpp:
 
 C:/mingw64/include/c++/15.2.0/cstring:
 
@@ -547,6 +533,8 @@ C:/mingw64/include/c++/15.2.0/cwchar:
 
 C:/mingw64/include/c++/15.2.0/stdlib.h:
 
+C:/new-opencv/opencv/modules/core/include/opencv2/core/check.hpp:
+
 C:/mingw64/include/c++/15.2.0/bits/unique_lock.h:
 
 C:/mingw64/include/c++/15.2.0/bits/char_traits.h:
@@ -563,15 +551,11 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
 C:/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann.hpp:
-
 C:/mingw64/include/c++/15.2.0/bits/stl_tree.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/locale.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_pair.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/features2d.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/hash_bytes.h:
 
@@ -581,15 +565,11 @@ C:/mingw64/include/c++/15.2.0/cstddef:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_map.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/operations.hpp:
-
 C:/mingw64/include/c++/15.2.0/queue:
 
 C:/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
 
 C:/mingw64/include/c++/15.2.0/cmath:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
@@ -603,21 +583,21 @@ C:/mingw64/include/c++/15.2.0/mutex:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/video/background_segm.hpp:
-
 C:/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 
 C:/mingw64/include/c++/15.2.0/backward/binders.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_deque.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core/base.hpp:
+
 C:/mingw64/include/c++/15.2.0/bits/std_mutex.h:
 
+C:/new-opencv/opencv/modules/core/include/opencv2/core/saturate.hpp:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/utils/inference_engine.hpp:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda.inl.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h:
 
@@ -627,13 +607,13 @@ C:/mingw64/include/c++/15.2.0/bits/requires_hosted.h:
 
 C:/mingw64/include/c++/15.2.0/cstdio:
 
+C:/new-opencv/opencv/modules/dnn/include/opencv2/dnn/dict.hpp:
+
 C:/mingw64/include/c++/15.2.0/bits/stl_function.h:
 
 C:/mingw64/include/c++/15.2.0/bits/quoted_string.h:
 
-C:/mingw64/include/c++/15.2.0/bits/postypes.h:
-
-C:/mingw64/include/c++/15.2.0/exception:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/random.h:
 
 C:/mingw64/include/c++/15.2.0/algorithm:
 
@@ -647,11 +627,15 @@ C:/mingw64/include/c++/15.2.0/bits/hashtable_policy.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/xmmintrin.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/logger.h:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/heap.h:
 
 C:/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h:
 
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/lsh_index.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
+
+C:/mingw64/include/c++/15.2.0/bits/locale_classes.h:
 
 C:/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
 
@@ -663,9 +647,21 @@ C:/mingw64/include/c++/15.2.0/cfloat:
 
 C:/mingw64/include/c++/15.2.0/bits/concept_check.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
 C:/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
 
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cuda.hpp:
+
+C:/mingw64/include/c++/15.2.0/bits/version.h:
+
+C:/mingw64/include/c++/15.2.0/bits/erase_if.h:
+
 C:/mingw64/include/c++/15.2.0/ios:
+
+C:/new-opencv/opencv/opencv-build/opencv2/opencv_modules.hpp:
+
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/dynamic_bitset.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
@@ -673,27 +669,21 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
 C:/mingw64/include/c++/15.2.0/cstdlib:
 
+C:/mingw64/include/c++/15.2.0/cwctype:
+
+C:/mingw64/include/c++/15.2.0/bits/basic_ios.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp:
+
 C:/mingw64/include/c++/15.2.0/bits/stl_relops.h:
 
 C:/mingw64/include/c++/15.2.0/bits/ostream.h:
 
 C:/c++_projects/Recordify/hani_screen_shot/video-generator.cpp:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/util.hpp:
-
-C:/mingw64/include/c++/15.2.0/bits/erase_if.h:
-
-C:/mingw64/include/c++/15.2.0/bits/version.h:
-
-C:/mingw64/include/c++/15.2.0/bits/locale_classes.h:
-
-C:/mingw64/include/c++/15.2.0/bits/basic_ios.h:
-
-C:/mingw64/include/c++/15.2.0/cwctype:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kdtree_single_index.h:
-
 C:/mingw64/include/c++/15.2.0/climits:
+
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
@@ -707,9 +697,9 @@ C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 
 C:/mingw64/include/c++/15.2.0/debug/assertions.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/motion_estimators.hpp:
-
 C:/mingw64/include/c++/15.2.0/backward/auto_ptr.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core/hal/interface.h:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_set.h:
 
@@ -719,11 +709,23 @@ C:/mingw64/include/c++/15.2.0/bits/locale_facets_nonio.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/codecvt.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/ml/ml.inl.hpp:
-
 C:/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+C:/mingw64/include/c++/15.2.0/bit:
+
+C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core/mat.inl.hpp:
+
+C:/new-opencv/opencv/modules/calib3d/include/opencv2/calib3d.hpp:
+
+C:/mingw64/include/c++/15.2.0/bits/postypes.h:
+
+C:/mingw64/include/c++/15.2.0/exception:
+
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/general.h:
 
 C:/mingw64/include/c++/15.2.0/complex:
 
@@ -737,11 +739,15 @@ C:/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
+C:/new-opencv/opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp:
+
 C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/general.h:
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_dictionary.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/unique_ptr.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core/persistence.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_queue.h:
 
@@ -751,9 +757,9 @@ C:/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h:
 
 C:/mingw64/include/c++/15.2.0/bits/memory_resource.h:
 
-C:/mingw64/include/c++/15.2.0/istream:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/config.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/kmeans_index.h:
+C:/mingw64/include/c++/15.2.0/istream:
 
 C:/mingw64/include/c++/15.2.0/bits/exception.h:
 
@@ -761,17 +767,9 @@ C:/mingw64/include/c++/15.2.0/bits/istream.tcc:
 
 C:/mingw64/include/c++/15.2.0/vector:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/hierarchical_clustering_index.h:
-
 C:/mingw64/include/c++/15.2.0/bits/deque.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/parse_numbers.h:
-
-C:/mingw64/include/c++/15.2.0/bit:
-
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
-
-C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/utility.h:
 
@@ -787,10 +785,6 @@ C:/mingw64/include/c++/15.2.0/bits/locale_facets.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/nested_exception.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/photo.hpp:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/config.h:
-
 C:/mingw64/include/c++/15.2.0/iosfwd:
 
 C:/mingw64/include/c++/15.2.0/bits/locale_conv.h:
@@ -803,17 +797,15 @@ C:/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/float.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/dnn/dnn.inl.hpp:
-
 C:/mingw64/include/c++/15.2.0/bits/std_function.h:
 
 C:/mingw64/include/c++/15.2.0/bits/sstream.tcc:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/async.hpp:
-
 C:/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc:
 
 C:/mingw64/include/c++/15.2.0/bits/basic_ios.tcc:
+
+C:/new-opencv/opencv/modules/photo/include/opencv2/photo.hpp:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 
@@ -829,9 +821,11 @@ C:/mingw64/include/c++/15.2.0/bits/locale_classes.tcc:
 
 C:/mingw64/x86_64-w64-mingw32/include/assert.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/imgproc.hpp:
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/signal.h:
+
+C:/new-opencv/opencv/modules/core/include/opencv2/core.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/stl_construct.h:
 
@@ -855,17 +849,17 @@ C:/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
 
 C:/mingw64/include/c++/15.2.0/bits/list.tcc:
 
-C:/mingw64/include/c++/15.2.0/fstream:
-
 C:/mingw64/include/c++/15.2.0/bits/chrono.h:
 
 C:/mingw64/include/c++/15.2.0/map:
 
 C:/mingw64/include/c++/15.2.0/typeinfo:
 
+C:/mingw64/x86_64-w64-mingw32/include/wchar.h:
+
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/random.h:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/bufferpool.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/unordered_map.h:
 
@@ -875,11 +869,7 @@ C:/mingw64/include/c++/15.2.0/bits/move.h:
 
 C:/mingw64/include/c++/15.2.0/bits/node_handle.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/utils/logtag.hpp:
-
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_board.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdio.h:
 
@@ -905,17 +895,19 @@ C:/mingw64/include/c++/15.2.0/ext/concurrence.h:
 
 C:/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc:
 
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/composite_index.h:
+
 C:/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/neon_utils.hpp:
 
 C:/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/mingw64/include/c++/15.2.0/new:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/messages_members.h:
+
+C:/new-opencv/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp:
 
 C:/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
@@ -927,10 +919,6 @@ C:/mingw64/include/c++/15.2.0/type_traits:
 
 C:/mingw64/include/c++/15.2.0/initializer_list:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/camera.hpp:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/ml.hpp:
-
 C:/mingw64/include/c++/15.2.0/iomanip:
 
 C:/mingw64/include/c++/15.2.0/iostream:
@@ -939,13 +927,9 @@ C:/mingw64/include/c++/15.2.0/limits:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/time_members.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cvdef.h:
-
 C:/mingw64/include/c++/15.2.0/locale:
 
 C:/mingw64/include/c++/15.2.0/math.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/cuda.hpp:
 
 C:/mingw64/include/c++/15.2.0/string_view:
 
@@ -953,7 +937,7 @@ C:/mingw64/include/c++/15.2.0/ostream:
 
 C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/stitching/detail/seam_finders.hpp:
+C:/new-opencv/opencv/modules/flann/include/opencv2/flann/kdtree_index.h:
 
 C:/mingw64/include/c++/15.2.0/memory:
 
@@ -977,6 +961,8 @@ C:/mingw64/include/c++/15.2.0/cstdint:
 
 C:/mingw64/include/c++/15.2.0/set:
 
+C:/new-opencv/opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp:
+
 C:/mingw64/include/c++/15.2.0/stdexcept:
 
 C:/mingw64/x86_64-w64-mingw32/include/ctype.h:
@@ -985,8 +971,6 @@ C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/string.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/result_set.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
 
 C:/mingw64/include/c++/15.2.0/streambuf:
@@ -994,8 +978,6 @@ C:/mingw64/include/c++/15.2.0/streambuf:
 C:/mingw64/include/c++/15.2.0/ext/string_conversions.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/composite_index.h:
 
 C:/mingw64/include/c++/15.2.0/bits/functional_hash.h:
 
@@ -1009,6 +991,10 @@ C:/mingw64/include/c++/15.2.0/bits/shared_ptr.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stdarg.h:
 
+C:/mingw64/include/c++/15.2.0/tr1/gamma.tcc:
+
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect/aruco_detector.hpp:
+
 C:/mingw64/include/c++/15.2.0/bits/hashtable.h:
 
 C:/mingw64/include/c++/15.2.0/bits/new_allocator.h:
@@ -1018,6 +1004,8 @@ C:/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc:
 C:/mingw64/include/c++/15.2.0/ctime:
 
 C:/mingw64/include/c++/15.2.0/tr1/poly_laguerre.tcc:
+
+C:/new-opencv/opencv/modules/objdetect/include/opencv2/objdetect.hpp:
 
 C:/mingw64/include/c++/15.2.0/tr1/riemann_zeta.tcc:
 
@@ -1037,21 +1025,21 @@ C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
-C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h:
-
 C:/mingw64/include/c++/15.2.0/clocale:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/objdetect/aruco_detector.hpp:
-
 C:/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h:
 
+C:/new-opencv/opencv/modules/core/include/opencv2/core/cvstd.hpp:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/float.h:
+
+C:/new-opencv/opencv/modules/video/include/opencv2/video/tracking.hpp:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
 
@@ -1073,11 +1061,11 @@ C:/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/flann/heap.h:
-
 C:/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/new-opencv/opencv/include/opencv2/opencv.hpp:
 
 C:/mingw64/include/c++/15.2.0/ext/atomicity.h:
 
@@ -1085,7 +1073,7 @@ C:/mingw64/x86_64-w64-mingw32/include/pthread.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
 
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/highgui.hpp:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/matx.inl.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/math.h:
 
@@ -1094,8 +1082,6 @@ C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
 C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sched.h:
-
-E:/openccv/opencv-4.12.0/build_mingw/install/include/opencv2/core/check.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
 
@@ -1107,8 +1093,10 @@ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
-C:/mingw64/include/c++/15.2.0/bits/fstream.tcc:
+C:/new-opencv/opencv/modules/core/include/opencv2/core/neon_utils.hpp:
 
 C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/wctype.h:

@@ -243,7 +243,7 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //No help, variable specified on the command line.
-OpenCV_DIR:UNINITIALIZED=E:\openccv\opencv-4.12.0\build_mingw\install
+OpenCV_DIR:UNINITIALIZED=C:\new-opencv\opencv\opencv-build
 
 //Value Computed by CMake
 video-generator_BINARY_DIR:STATIC=C:/c++_projects/Recordify/hani_screen_shot/build
@@ -418,5 +418,5 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenCV
-FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[E:/openccv/opencv-4.12.0/build_mingw/install][v4.12.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[C:/new-opencv/opencv/opencv-build][v4.13.0()]
 

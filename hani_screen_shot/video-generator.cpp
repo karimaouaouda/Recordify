@@ -2,7 +2,7 @@
 #include <iostream>
 #include <opencv2/core/mat.hpp>
 #include <iostream>
-#include <fstream>
+// #include <fstream>
 #include <vector>
 using namespace std;
 int readImage();
@@ -58,9 +58,9 @@ int readImage()
     while (true)
     {
         std::string filename = "test.jpg";
-
-        cv::Mat image = cv::imread("C:/c++_projects/Recordify/hani_screen_shot/test.png", cv::IMREAD_COLOR);
-
+        cout << "before start read the image" << endl;
+        cv::Mat image = cv::imread("C:/c++_projects/Recordify/hani_screen_shot/test.jpg", cv::IMREAD_COLOR);
+        cout << "after read the image" << endl;
         // Display the image in a window
         cv::imshow("Displayed Image", image);
 

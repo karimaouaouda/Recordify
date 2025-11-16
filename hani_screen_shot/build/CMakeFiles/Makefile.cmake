@@ -45,11 +45,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/mingw64/share/cmake-4.1/Modules/Platform/Windows-windres.cmake"
   "C:/mingw64/share/cmake-4.1/Modules/Platform/Windows.cmake"
   "C:/mingw64/share/cmake-4.1/Modules/Platform/WindowsPaths.cmake"
-  "E:/openccv/opencv-4.12.0/build_mingw/install/OpenCVConfig-version.cmake"
-  "E:/openccv/opencv-4.12.0/build_mingw/install/OpenCVConfig.cmake"
-  "E:/openccv/opencv-4.12.0/build_mingw/install/x64/mingw/lib/OpenCVConfig.cmake"
-  "E:/openccv/opencv-4.12.0/build_mingw/install/x64/mingw/lib/OpenCVModules-release.cmake"
-  "E:/openccv/opencv-4.12.0/build_mingw/install/x64/mingw/lib/OpenCVModules.cmake"
+  "C:/new-opencv/opencv/opencv-build/OpenCVConfig-version.cmake"
+  "C:/new-opencv/opencv/opencv-build/OpenCVConfig.cmake"
+  "C:/new-opencv/opencv/opencv-build/OpenCVModules.cmake"
   )
 
 # The corresponding makefile is:
