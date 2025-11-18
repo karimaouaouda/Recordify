@@ -2,10 +2,11 @@
 #include <iostream>
 #include <opencv2/core/mat.hpp>
 #include <iostream>
+#include <codecvt>
 // #include <fstream>
 #include <vector>
 using namespace std;
-int readImage();
+cv::Mat readImage();
 // define size of out images frame
 int frame_width, frame_height;
 
@@ -52,14 +53,20 @@ int main()
     readImage();
 }
 
-int readImage()
+cv::Mat readImage()
 {
-
-    while (true)
+    int number = 0;
+    while (number <= 100)
     {
+        string imagepath;
+
         std::string filename = "test.jpg";
         cout << "before start read the image" << endl;
-        cv::Mat image = cv::imread("C:/c++_projects/Recordify/hani_screen_shot/test.jpg", cv::IMREAD_COLOR);
+        wstring imageName = L"test" + to_wstring(number) + L".jpg";
+        wstring imagepathC = L"C:/c++_projects/Recordify/hani_screen_shot/" + imageName;
+        std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
+        imagepath = converter.to_bytes(imagepathC);
+        cv::Mat image = cv::imread(imagepath, cv::IMREAD_COLOR);
         cout << "after read the image" << endl;
         // Display the image in a window
         cv::imshow("Displayed Image", image);
@@ -97,8 +104,8 @@ int readImage()
         // file.close(); // Close the file
 
         // std::cout << "Successfully read " << fileSize << " bytes from " << filename << std::endl;
-
-        // return file;
+        number += 1;
+        return image;
     }
 
     // The 'imageData' vector now contains the raw binary data of the image.
