@@ -13,44 +13,40 @@ int frame_width, frame_height;
 // define class of write video
 cv::VideoWriter writeVideo;
 
-// int main()
-// {
-
-//     // define the video codec used in the video
-//     int videoCodec = writeVideo.fourcc('X', 'V', 'I', 'D');
-
-//     // define resolution of video from the frames
-//     cv::Size resolution = cv::Size(frame_width, frame_height);
-
-//     // Define the codec and create VideoWriter object with informations about our video
-//     cv::VideoWriter out("output.avi", videoCodec, 30.0, resolution);
-
-//     // lop the images frames
-//     while (true)
-//     {
-
-//         if (!ret)
-//         {
-//             std::cout << "End of video or error occurred." << std::endl;
-//             break;
-//         }
-
-//         // Write the frame to the output video file
-//         out.write(frame);
-
-//         // Display the frame
-//         cv::imshow("Frame", frame);
-//         if (cv::waitKey(1) == 'q')
-//         {
-//             break;
-//         }
-//     }
-//     return 0;
-// }
-
 int main()
 {
-    readImage();
+
+    // define the video codec used in the video
+    int videoCodec = writeVideo.fourcc('X', 'V', 'I', 'D');
+
+    // define resolution of video from the frames
+    cv::Size resolution = cv::Size(frame_width, frame_height);
+
+    // Define the codec and create VideoWriter object with informations about our video
+    cv::VideoWriter out("output.avi", videoCodec, 30.0, resolution);
+
+    // lop the images frames
+    while (true)
+    {
+        cv::Mat image = readImage();
+
+        if (image.empty())
+        {
+            std::cout << "End of video or error occurred." << std::endl;
+            break;
+        }
+
+        // Write the frame to the output video file
+        out.write(image);
+
+        // Display the frame
+        cv::imshow("Frame", image);
+        if (cv::waitKey(1) == 'q')
+        {
+            break;
+        }
+    }
+    return 0;
 }
 
 cv::Mat readImage()
