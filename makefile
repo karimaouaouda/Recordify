@@ -15,6 +15,12 @@ TEST_BIN_DIR = bin/tests
 # Modules - add new modules here
 MODULES = core screen_handler audio_handler video_handler file_manager ui config utils
 
+#screenshot rule
+screenshot:
+	clean 
+	build
+	echo "every things is ready"
+
 # Program name
 TARGET = $(BIN_DIR)/recordify.exe
 TEST_TARGET = $(TEST_BIN_DIR)/test_runner.exe
@@ -206,3 +212,10 @@ check:
 
 # Phony targets
 .PHONY: all clean clean-test rebuild debug test test-run test-verbose test-debug install help run check directories build-module-% test-module-% info-module-%
+
+
+hani:
+	g++ hani_screen_shot\full_screen.cpp -lgdi32 -o bin\app.exe
+
+runhani:
+	bin\app.exe
