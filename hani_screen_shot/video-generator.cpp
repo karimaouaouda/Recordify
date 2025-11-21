@@ -23,10 +23,9 @@ int main()
     cv::Size resolution = cv::Size(frame_width, frame_height);
 
     // Define the codec and create VideoWriter object with informations about our video
-    cv::VideoWriter out("output.mp4", videoCodec, 30, cv::Size(frame_width, frame_height));
+    cv::VideoWriter out("output.avi", videoCodec, 30, cv::Size(frame_width, frame_height));
 
-    cout << "directly after making the video write function: " << GetLastError() << endl;
-    // check if is video writer is opened
+       // check if is video writer is opened
     if (!out.isOpened())
     {
         std::cerr << "Error: Could not open the video writer." << std::endl;
@@ -64,7 +63,7 @@ cv::Mat readImage(int number)
     wstring imageName = L"image_" + to_wstring(number) + L".jpg";
 
     // the path of out images(frames)
-    wstring imagepathC = L"C:\\" + imageName;
+    wstring imagepathC = L"C:\\python_train\\python_downloader\\downloaded_images\\" + imageName;
 
     // object used to convert between wstring and string UTF-8
     std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
