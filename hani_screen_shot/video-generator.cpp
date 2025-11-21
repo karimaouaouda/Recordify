@@ -7,7 +7,7 @@
 #include <vector>
 using namespace std;
 cv::Mat readImage(int number);
-// define size of out images frame
+// define size of our images frame
 int frame_width = 1920;
 int frame_height = 1080;
 
@@ -22,12 +22,11 @@ int main()
     // define resolution of video from the frames
     cv::Size resolution = cv::Size(frame_width, frame_height);
 
-    // Define the codec and create VideoWriter object with informations about our video
-    cv::VideoWriter out("output.mp4", videoCodec, 30, cv::Size(frame_width, frame_height));
+    // Define the codec and create VideoWriter object with informations abour our video
+    cv::VideoWriter our("ourput.avi", videoCodec, 30, cv::Size(frame_width, frame_height));
 
-    cout << "directly after making the video write function: " << GetLastError() << endl;
     // check if is video writer is opened
-    if (!out.isOpened())
+    if (!our.isOpened())
     {
         std::cerr << "Error: Could not open the video writer." << std::endl;
 
@@ -45,12 +44,12 @@ int main()
             break;
         }
 
-        // Write the frame to the output video file
-        out.write(image);
+        // Write the frame to the ourput video file
+        our.write(image);
 
         // Display the frame
     }
-    out.release();
+    our.release();
     return 0;
 }
 
@@ -63,8 +62,8 @@ cv::Mat readImage(int number)
 
     wstring imageName = L"image_" + to_wstring(number) + L".jpg";
 
-    // the path of out images(frames)
-    wstring imagepathC = L"C:\\" + imageName;
+    // the path of our images(frames)
+    wstring imagepathC = L"C:\\python_train\\python_downloader\\downloaded_images\\" + imageName;
 
     // object used to convert between wstring and string UTF-8
     std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
@@ -75,7 +74,7 @@ cv::Mat readImage(int number)
     // read the image from that path with color
     cv::Mat image = cv::imread(imagepath, cv::IMREAD_COLOR);
 
-    // resize our image with speicifique width and height without any Distorted
+    // resize our image with speicifique width and height withour any Distorted
     cv::resize(image, resizedImage, cv::Size(frame_width, frame_height), 0, 0, cv::INTER_LINEAR);
 
     // return the resized image
