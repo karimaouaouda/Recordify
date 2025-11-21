@@ -1,6 +1,7 @@
 #include "core/application.h"
 
-int main() {
+int main()
+{
     recordify::core::Application app;
     return app.run();
 }

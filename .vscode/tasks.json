@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build with OpenCV",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "hani_screen_shot/video-generator.cpp",
+                "-IC:/opencv/build/include",
+                "-LC:/opencv/build/x64/vc16/lib",
+                "-lopencv_world4120d",
+                "-o",
+                "generator.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
