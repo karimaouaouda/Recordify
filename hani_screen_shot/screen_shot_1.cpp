@@ -32,28 +32,44 @@ CaptureResult CaptureAnImage();
 void FullTask(int fileNumber);
 void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber);
 
-int main()
+void screenShot(int arg)
 {
-    int fileNumber = 0;
-    while (fileNumber <= 5)
+    if (arg == 1)
     {
-        Sleep(5000);
-        FullTask(fileNumber);
-        fileNumber += 1;
+        FullTask(0);
     }
-    return 0;
+    else
+    {
+        int fileNumber = 0;
+        while (fileNumber <= 5)
+        {
+            Sleep(5000);
+            FullTask(fileNumber);
+            fileNumber += 1;
+        }
+    }
 }
 
 void FullTask(int fileNumber)
 {
+
     // struct for each parameters of each screen shot
     CaptureResult captureResult;
-    // make thread
-    std::thread imageCapture([&]()
-                             { captureResult = CaptureAnImage(); 
+    if (fileNumber = 0)
+    {
+        captureResult = CaptureAnImage();
+        saveFile(captureResult.bmpScreen, captureResult.hbmScreen, captureResult.hdcScreen, captureResult.hdcMemDC, fileNumber);
+    }
+    else
+    {
+        // make multiple screenshot's
+        //  make thread
+        std::thread imageCapture([&]()
+                                 { captureResult = CaptureAnImage(); 
                                 saveFile( captureResult.bmpScreen, captureResult.hbmScreen, captureResult.hdcScreen, captureResult.hdcMemDC, fileNumber); });
-    // start thread
-    imageCapture.join();
+        // start thread
+        imageCapture.join();
+    }
 }
 CaptureResult CaptureAnImage()
 {
