@@ -21,6 +21,7 @@ DWORD dwSizeofDIB = 0;
 char *lpbitmap = NULL;
 HANDLE hDIB = NULL;
 DWORD dwBmpSize = 0;
+int option = 0;
 struct CaptureResult
 {
     BITMAP bmpScreen;
@@ -32,8 +33,9 @@ CaptureResult CaptureAnImage();
 void FullTask(int fileNumber);
 void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber);
 
-void screenShot(int arg)
+void screenShot(int arg, int time = 5)
 {
+    option = arg;
     if (arg == 1)
     {
         FullTask(0);
@@ -41,7 +43,7 @@ void screenShot(int arg)
     else
     {
         int fileNumber = 0;
-        while (fileNumber <= 5)
+        while (fileNumber <= time)
         {
             Sleep(5000);
             FullTask(fileNumber);
@@ -55,7 +57,7 @@ void FullTask(int fileNumber)
 
     // struct for each parameters of each screen shot
     CaptureResult captureResult;
-    if (fileNumber = 0)
+    if (option == 1)
     {
         captureResult = CaptureAnImage();
         saveFile(captureResult.bmpScreen, captureResult.hbmScreen, captureResult.hdcScreen, captureResult.hdcMemDC, fileNumber);
@@ -136,7 +138,7 @@ void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, 
 
     // A file is created, this is where we will save the screen capture.
 
-    wstring fileName = L"screenshot" + to_wstring(FileNumber) + L"helo" + L".bmp";
+    wstring fileName = L"frame" + to_wstring(FileNumber) + L".jpg";
     hFile = CreateFileW(fileName.c_str(),
                         GENERIC_WRITE,
                         0,

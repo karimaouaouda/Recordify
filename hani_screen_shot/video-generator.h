@@ -1,3 +1,4 @@
+#pragma once
 #ifndef VIDEO - GENERATOR
 #define VIDEO -GENERATOR
 #include <opencv2/core/mat.hpp>

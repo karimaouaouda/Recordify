@@ -1,9 +1,11 @@
 #include <iostream>
-
+#include "screen_shot.h"
+#include "video-generator.h"
 using namespace std;
 void ChoseOption();
 int main()
 {
+    ChoseOption();
 }
 
 void ChoseOption()
@@ -14,11 +16,15 @@ void ChoseOption()
 
     if (option == 1)
     {
-        // screenShot();
+        screenShot(1);
     }
     else if (option == 2)
     {
-        // screenShot()
+        int time;
+        cout << "How long do you want the recording to be?" << endl;
+        cin >> time;
+        screenShot(time);
+        videoGenerator();
     }
     else
     {

@@ -15,7 +15,7 @@ int frame_height = 1080;
 cv::VideoWriter writeVideo;
 
 cv::Mat image;
-int main()
+int videoGenerator()
 {
     // define the video codec used in the video
     int videoCodec = writeVideo.fourcc('M', 'J', 'P', 'G');
@@ -60,11 +60,14 @@ cv::Mat readImage(int number)
 
     string imagepath;
 
-    wstring imageName = L"image_" + to_wstring(number) + L".jpg";
+    wstring imageName = L"frame" + to_wstring(number) + L".jpg";
 
     // the path of our images(frames)
-    wstring imagepathC = L"C:\\python_train\\python_downloader\\downloaded_images\\" + imageName;
-
+    // wstring imagepathC = L"C:\\python_train\\python_downloader\\downloaded_images\\" + imageName;
+    cout << "the image name is :" << endl;
+    wcout << imageName << endl;
+    wstring imagepathC =
+        L"C:\\c++_projects\\Recordify\\hani_screen_shot\\build" + imageName;
     // object used to convert between wstring and string UTF-8
     std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
 
