@@ -15,7 +15,7 @@ int frame_height = 1080;
 cv::VideoWriter writeVideo;
 
 cv::Mat image;
-int videoGenerator()
+int videoGenerator(int time = 5)
 {
     // define the video codec used in the video
     int videoCodec = writeVideo.fourcc('M', 'J', 'P', 'G');
@@ -29,13 +29,14 @@ int videoGenerator()
     if (!our.isOpened())
     {
         std::cerr << "Error: Could not open the video writer." << std::endl;
-
         cout << "the error is: " << GetLastError() << endl;
         return -1;
     }
-    // lop the images frames
-    for (int number = 0; number <= 200; number++)
+
+    // loop the images frames
+    for (int number = 0; number <= time-1; number++)
     {
+        // read image from the specific number
         cv::Mat image = readImage(number);
 
         if (image.empty())
@@ -43,11 +44,8 @@ int videoGenerator()
             std::cout << "End of video or error occurred." << std::endl;
             break;
         }
-
         // Write the frame to the ourput video file
         our.write(image);
-
-        // Display the frame
     }
     our.release();
     return 0;
@@ -63,11 +61,7 @@ cv::Mat readImage(int number)
     wstring imageName = L"frame" + to_wstring(number) + L".jpg";
 
     // the path of our images(frames)
-    // wstring imagepathC = L"C:\\python_train\\python_downloader\\downloaded_images\\" + imageName;
-    cout << "the image name is :" << endl;
-    wcout << imageName << endl;
-    wstring imagepathC =
-        L"C:\\c++_projects\\Recordify\\hani_screen_shot\\build" + imageName;
+    wstring imagepathC =imageName;
     // object used to convert between wstring and string UTF-8
     std::wstring_convert<std::codecvt_utf8<wchar_t>> converter;
 

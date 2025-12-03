@@ -3,14 +3,23 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}",
-                "C:\\opencv\\build\\include"
+                  "${workspaceFolder}",
+                "C:/msys64/mingw64/include",
+                "C:/msys64/mingw64/include/opencv4"
             ],
             "defines": [],
             "compilerPath": "C:/mingw64/bin/g++.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+               "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "C:/msys64/mingw64/include",
+                    "C:/msys64/mingw64/include/opencv4"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4

@@ -1,8 +1,8 @@
-# Install script for directory: C:/c++_projects/Recordify/hani_screen_shot
+# Install script for directory: C:/Users/thinkpad/c++_projects/Recordify/hani_screen_shot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/video-generator")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/record-prog")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/c++_projects/Recordify/hani_screen_shot/build/install_local_manifest.txt"
+  file(WRITE "C:/Users/thinkpad/c++_projects/Recordify/hani_screen_shot/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/c++_projects/Recordify/hani_screen_shot/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/thinkpad/c++_projects/Recordify/hani_screen_shot/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

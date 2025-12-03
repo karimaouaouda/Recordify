@@ -23,8 +23,8 @@ void ChoseOption()
         int time;
         cout << "How long do you want the recording to be?" << endl;
         cin >> time;
-        screenShot(time);
-        videoGenerator();
+        int lastNumber = screenShot(time);
+        videoGenerator(lastNumber);
     }
     else
     {

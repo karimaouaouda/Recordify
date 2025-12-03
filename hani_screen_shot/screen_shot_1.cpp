@@ -33,8 +33,9 @@ CaptureResult CaptureAnImage();
 void FullTask(int fileNumber);
 void saveFile(BITMAP bmpScreen, HBITMAP hbmScreen, HDC hdcScreen, HDC hdcMemDC, int FileNumber);
 
-void screenShot(int arg, int time = 5)
+int screenShot(int arg, int time = 5)
 {
+    int lastNumber = 0;
     option = arg;
     if (arg == 1)
     {
@@ -49,7 +50,9 @@ void screenShot(int arg, int time = 5)
             FullTask(fileNumber);
             fileNumber += 1;
         }
+        lastNumber = fileNumber;
     }
+    return lastNumber;
 }
 
 void FullTask(int fileNumber)
@@ -179,5 +182,4 @@ done:
     DeleteObject(hbmScreen);
     DeleteObject(hdcMemDC);
     ReleaseDC(NULL, hdcScreen);
-    // ReleaseDC(hWnd, hdcWindow);
 }

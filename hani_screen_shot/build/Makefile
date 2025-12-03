@@ -56,10 +56,10 @@ RM = C:\mingw64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\c++_projects\Recordify\hani_screen_shot
+CMAKE_SOURCE_DIR = C:\Users\thinkpad\c++_projects\Recordify\hani_screen_shot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\c++_projects\Recordify\hani_screen_shot\build
+CMAKE_BINARY_DIR = C:\Users\thinkpad\c++_projects\Recordify\hani_screen_shot\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\c++_projects\Recordify\hani_screen_shot\build\CMakeFiles C:\c++_projects\Recordify\hani_screen_shot\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\thinkpad\c++_projects\Recordify\hani_screen_shot\build\CMakeFiles C:\Users\thinkpad\c++_projects\Recordify\hani_screen_shot\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\c++_projects\Recordify\hani_screen_shot\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\thinkpad\c++_projects\Recordify\hani_screen_shot\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,72 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named video-generator
+# Target rules for targets named record-prog
 
 # Build rule for target.
-video-generator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 video-generator
-.PHONY : video-generator
+record-prog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 record-prog
+.PHONY : record-prog
 
 # fast build rule for target.
-video-generator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\video-generator.dir\build.make CMakeFiles/video-generator.dir/build
-.PHONY : video-generator/fast
+record-prog/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/build
+.PHONY : record-prog/fast
+
+main.obj: main.cpp.obj
+.PHONY : main.obj
+
+# target to build an object file
+main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/main.cpp.obj
+.PHONY : main.cpp.obj
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+screen_shot_1.obj: screen_shot_1.cpp.obj
+.PHONY : screen_shot_1.obj
+
+# target to build an object file
+screen_shot_1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/screen_shot_1.cpp.obj
+.PHONY : screen_shot_1.cpp.obj
+
+screen_shot_1.i: screen_shot_1.cpp.i
+.PHONY : screen_shot_1.i
+
+# target to preprocess a source file
+screen_shot_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/screen_shot_1.cpp.i
+.PHONY : screen_shot_1.cpp.i
+
+screen_shot_1.s: screen_shot_1.cpp.s
+.PHONY : screen_shot_1.s
+
+# target to generate assembly for a file
+screen_shot_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/screen_shot_1.cpp.s
+.PHONY : screen_shot_1.cpp.s
 
 video-generator.obj: video-generator.cpp.obj
 .PHONY : video-generator.obj
 
 # target to build an object file
 video-generator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\video-generator.dir\build.make CMakeFiles/video-generator.dir/video-generator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/video-generator.cpp.obj
 .PHONY : video-generator.cpp.obj
 
 video-generator.i: video-generator.cpp.i
@@ -141,7 +189,7 @@ video-generator.i: video-generator.cpp.i
 
 # target to preprocess a source file
 video-generator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\video-generator.dir\build.make CMakeFiles/video-generator.dir/video-generator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/video-generator.cpp.i
 .PHONY : video-generator.cpp.i
 
 video-generator.s: video-generator.cpp.s
@@ -149,7 +197,7 @@ video-generator.s: video-generator.cpp.s
 
 # target to generate assembly for a file
 video-generator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\video-generator.dir\build.make CMakeFiles/video-generator.dir/video-generator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\record-prog.dir\build.make CMakeFiles/record-prog.dir/video-generator.cpp.s
 .PHONY : video-generator.cpp.s
 
 # Help Target
@@ -160,7 +208,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... video-generator
+	@echo ... record-prog
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... screen_shot_1.obj
+	@echo ... screen_shot_1.i
+	@echo ... screen_shot_1.s
 	@echo ... video-generator.obj
 	@echo ... video-generator.i
 	@echo ... video-generator.s
